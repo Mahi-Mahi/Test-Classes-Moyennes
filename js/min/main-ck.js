@@ -1,0 +1,1 @@
+var toggleMethodo=function(){jQuery(".methodo, .bt-go--ok").find("a").on("click",function(o){jQuery("#methodo").slideToggle("normal"),o.preventDefault()})};jQuery(document).ready(function(){toggleMethodo()});
