@@ -45,63 +45,70 @@
 	}(document, 'script', 'facebook-jssdk'));</script>
 
 		<div ng-view>
-			
-<div class="wrapper gradient wrapper-home">
-
-	<div class="clearfix">
-		<div class="share-container">
-			<!-- buttons start here -->
-			<ul class="rrssb-buttons clearfix">
-				<li class="facebook">
-					<a href="https://www.facebook.com/sharer/sharer.php?u=SHARE_URL&t=SHARE_TEXT" class="popup" target="_blank">
-						<span class="icon">
-							<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" x="0px" y="0px" width="30px" height="30px" viewBox="0 0 100 100" xml:space="preserve" class="style0"><path d="M99.5,17.001C99.5,8.31,91.689,0.5,83,0.5H17C8.327,0.5,0.5,8.31,0.5,17.001v65.998C0.5,91.689,8.31,99.5,17,99.5h33V62.1 H37.9V45.6H50v-6.428C50,28.11,58.359,18.1,68.59,18.1H81.9v16.5H68.562c-1.46,0-3.162,1.761-3.162,4.427V45.6h16.5v16.5H65.4v37.4 H83c8.672,0,16.5-7.83,16.5-16.501V17.001z"/></svg>
-						</span>
-						<span class="text">Facebook</span>
-					</a>
-				</li>
-				<li class="twitter">
-					<a href="http://twitter.com/home?status=SHARE_STATUS" class="popup" target="_blank">
-						<span class="icon">
-							<svg xmlns="http://www.w3.org/2000/svg" viewBox="328 355 335 276" preserveAspectRatio="xMidYMid meet"><path d=" M 630  425 A 195  195 0 0 1 331  600 A 142  142 0 0 0 428  570 A 70  70 0 0 1 370  523 A 70  70 0 0 0 401  521 A 70  70 0 0 1 344  455 A 70  70 0 0 0 372  460 A 70  70 0 0 1 354  370 A 195  195 0 0 0 495  442 A 67  67 0 0 1 611  380 A 117  117 0 0 0 654  363 A 65  65 0 0 1 623  401 A 117  117 0 0 0 662  390 A 65  65 0 0 1 630  425 Z"/></svg>
-						</span>
-						<span class="text">Twitter</span>
-					</a>
-				</li>
-			</ul>
-			<!-- buttons end here -->
-		</div>
-	</div>
-
-	<div class="wrapper__header">
-		<a href="http://www.leparisienmagazine.fr" target="_blank"><img src="/app/images/logo-lpm-hp.png" alt="Le parisien magazine" /></a>
-	</div><!-- .wrapper__header -->
-	<div class="main" role="main">
-		<div class="sidebar">
-			<div class="sidebar__character">
-				<img src="/app/images/profile-ah.png?CACHE_BUST" alt="" />
-			</div><!-- .sidebar__character -->
-		</div><!-- .left-sidebar -->
-		<div class="content">
-			<p class="content__tagline">
-				<img src="/app/images/main-hp.png?CACHE_BUST" alt="Test municipales - Pour qui allez-vous voter ?" />
-			</p>
-			<p class="aligncenter bt-item">
-				<a href="/app/quizz">Jouer</a>
-			</p>
-		</div><!-- .content -->
-		<div class="sidebar">
-			<div class="sidebar__character">
-				<img src="/app/images/profile-nkm.png?CACHE_BUST" alt="" />
-			</div><!-- .sidebar__character -->
-		</div><!-- .right-sidebar -->
-	</div><!-- .main -->
-
-	<footer class="footer">
-		&nbsp;
-	</footer><!-- .footer -->
-</div><!-- .wrapper -->
-
+					<div class="wrapper home">
+			<header class="header clearfix">
+				<div class="header__body">
+					<img src="/images/logo-le-parisien-magazine-large.png" alt="Le Parisien Magazine" class="aligncenter" />
+					<p>présente</p>
+				</div><!-- .header__body -->
+			</header>
+			<div class="main">
+				<div class="tagline">
+					Faites-vous partie des <strong><em>Classes</em> moyennes</strong> <span>?</span>
+				</div><!-- .tagline -->
+				<div class="bt-go">
+					<a href="#"><span>Passer <br /> le test</span></a>
+				</div><!-- .bt-go -->
+			</div><!-- .main -->
+			<footer class="footer clearfix">
+				<div class="left methodo">
+					<a href="#">Méthodologie</a>
+				</div>
+				<ul class="unstyled footer-social__list right">
+					<li class="footer-social__item"><a href="#" class="icon-facebook">Partager sur facebook</a></li>
+					<li class="footer-social__item"><a href="#" class="icon-twitter">Twitter</a></li>
+					<li class="footer-social__item"><a href="#" class="icon-email">Partager via Email</a></li>
+				</ul>
+			</footer><!-- .footer -->
+		</div><!-- .wrapper -->
+		<div id="methodo">
+			<div class="aligncenter">
+				<div class="tagline">
+					Faites-vous partie des <strong><em>Classes</em> moyennes</strong> <span>?</span>
+				</div><!-- .tagline -->
+				<h2>Méthodologie</h2>
+			</div><!-- .aligncenter -->
+			<div class="methodo-inner clearfix">
+				<p>
+					Ce test a été réalisé en collaboration avec l’Observatoire des inégalités (<a href="http://www.inegalites.fr" target="_blank">www.inegalites.fr</a>)
+				</p>
+				<p>
+					<strong>Les classes moyennes peuvent être approchées de différentes manières qui peuvent se combiner :</strong>
+				</p>
+				<ul>
+					<li>
+						<strong>Par mes revenus.</strong> Il existe plusieurs définitions. Nous avons retenu celle de l'Observatoire des inégalités qui estime que les classes moyennes sont comprises entre les 30% les plus modestes et les 20% les mieux notés.
+					</li>
+					<li>
+						<strong>Par les métiers.</strong> Les sociologues s'accordent à dire que les professions intermédiaires (technicien, professeur des écoles, infirmier, éducateur,...)  constituent le coeur des classes moyennes mais qu'il faut ajouter une petite portion de chacune des autres catégories socio-professionnelles.
+					</li>
+				</ul>
+				<p>
+					<strong>Des critères secondaires peuvent aussi être pris en compte. Nous avons retenus les 2 principaux :</strong>
+				</p>
+				<ul>
+					<li>
+						<strong>Le diplôme</strong> Le résultat de cette question varie fortement selon les générations. Si seuls 24% des français sont titulaires d'un diplôme supérieur au Bac, c'est le cas de 45,7% des actifs âgés de 30 à 39 ans.
+					</li>
+					<li>
+						<strong>Le patrimoine.</strong> Nous avons considéré que les classes moyennes étaient comprises entre les 30% les plus modestes et les 20% les mieux dotés. Ces données n'étant pas disponibles auprès de l'Insee, nous nous sommes basés sur le travail des économistes Thomas Piketty, Emmanuel Saez et Camille Landais (<a href="http://www.revolution-fiscale.fr" target="_blank">www.revolution-fiscale.fr</a>).
+					</li>
+				</ul>
+				<div class="bt-go bt-go--ok">
+					<a href="#"><span>OK</span></a>
+				</div><!-- .bt-go -->
+			</div><!-- .methodo-inner -->
+		</div><!-- #methodo -->
 		</div>
 		<script data-main="/app/js/main" src="/app/vendor/requirejs/require.js"></script>
 

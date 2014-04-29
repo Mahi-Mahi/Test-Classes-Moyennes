@@ -29,8 +29,8 @@ gulp.task('sass', function() {
         .pipe(gulp.dest('app/css'));
 });
 
-var base_url = 'test-municipales-paris-2014-app';
-var share_url = 'http://www.leparisienmagazine.fr/test-municipales-nkm-ou-anne-hidalgo-pour-qui-allez-vous-voter-111176/';
+var base_url = 'test-classes-moyennes-app';
+var share_url = 'http://www.leparisienmagazine.fr/test-classes-moyennes-111176/';
 var share_text = "Municipales à Paris : voterez-vous NKM ou Anne Hidalgo ? En 20 questions, découvrez quel programme vous convient le mieux grâce au test du Parisien Magazine !" + share_url;
 var share_status = "#MunicipalesParis : #NKM ou Anne #Hidalgo ? Découvrez quel programme vous convient le mieux ! via @leparisienmag " + share_url;
 
