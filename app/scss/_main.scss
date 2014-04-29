@@ -1,0 +1,51 @@
+
+
+
+.hidalgo-bullet, .nkm-bullet {
+	display: none;
+}
+.reponses {
+	.ah .hidalgo-bullet, .nkm .nkm-bullet {
+		display: inline-block;
+	}
+	.nkm .default-bullet, .ah .default-bullet {
+		display: none;
+	}
+}
+.bt-right, .bt-left {
+	display: none;
+}
+.reponses .bt-right {
+	display: block;
+}
+
+
+.question-idx {
+	display: block;
+	float: right;
+	margin-top: 10px;
+	font-weight: bold;
+	color: #6743a6;
+}
+
+.share-container {
+	float: right;
+		padding-top: 5px;
+	.rrssb-buttons {
+		height: 30px;
+		li a {
+			padding-top: 8px;
+			.icon	{
+				padding-top: 6px;
+			}
+			.text {
+				margin-left: 5px;
+			}
+		}
+	}
+}
+// .wrapper-result {
+	.share-container {
+		padding-right: 3px;
+	}
+// }
