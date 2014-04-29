@@ -126,12 +126,7 @@ textarea { overflow: auto; vertical-align: top; resize: vertical; }
 }
 
 .main {
-	-webkit-animation-name: fadeIn;
-	animation-name: fadeIn;
-	-webkit-animation-duration: 4s;
-	animation-duration: 4s;
-	-webkit-animation-fill-mode: both;
-	animation-fill-mode: both;
+
 	display:table;
 	margin: 0;
 	padding: 0;
@@ -145,12 +140,6 @@ textarea { overflow: auto; vertical-align: top; resize: vertical; }
 // HEADER
 
 .header {
-	-webkit-animation-name: fadeInDownBig;
-	animation-name: fadeInDownBig;
-	-webkit-animation-duration: 1.5s;
-	animation-duration: 1.5s;
-	-webkit-animation-fill-mode: both;
-	animation-fill-mode: both;
 	padding:25px 0 10px 0;
 	.home & {
 		padding:74px 0 10px 0;
@@ -236,12 +225,6 @@ textarea { overflow: auto; vertical-align: top; resize: vertical; }
 }
 
 .bt-go {
-	-webkit-animation-name: fadeIn;
-	animation-name: fadeIn;
-	-webkit-animation-duration: 4s;
-	animation-duration: 4s;
-	-webkit-animation-fill-mode: both;
-	animation-fill-mode: both;
 	padding:60px 0 0 0;
 	a {
 		background:#00A5CF;
