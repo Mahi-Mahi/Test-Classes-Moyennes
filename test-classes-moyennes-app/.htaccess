@@ -1,0 +1,12 @@
+
+AddType application/x-font-woff .woff
+ExpiresByType application/x-font-woff "access plus 1 year"
+
+
+<ifModule mod_rewrite.c>
+    RewriteEngine On
+    RewriteCond %{REQUEST_FILENAME} !-f
+    RewriteCond %{REQUEST_FILENAME} !-d
+    RewriteCond %{REQUEST_URI} !index
+    RewriteRule (.*) index.html [L]
+</ifModule>

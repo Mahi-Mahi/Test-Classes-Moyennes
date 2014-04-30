@@ -67,7 +67,7 @@ gulp.task('data', function() {
 });
 
 // default
-gulp.task('default', ['sass', 'data']);
+gulp.task('default', []);
 
 // setup
 gulp.task('setup', ['clean', 'bower', 'default']);

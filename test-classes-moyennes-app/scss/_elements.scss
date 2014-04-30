@@ -1,0 +1,40 @@
+// VARIABLES
+$base-font-size: 16px;
+$default-color:#000;
+$highlight-color:#00A5CF;
+
+// BOX-SIZING
+@mixin border-box-sizing() {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+// CSS TRANSITION
+@mixin transition($transition) {
+  -webkit-transition:$transition;
+  -moz-transition:$transition;
+  -o-transition:$transition;
+  -ms-transition:$transition;
+  transition:$transition;
+  -webkit-backface-visibility: hidden;
+  -webkit-transform: translate3d(0, 0, 0);      
+}
+
+// EM CONVERSION
+@function em($px, $base: $base-font-size) {
+    @return ($px / $base) * 1em;
+}
+
+// FONT-FACE
+@mixin font-face($font-family, $file-path, $weight: normal, $style: normal ) {
+  @font-face {
+    font-family: $font-family;
+    font-weight: $weight;
+    font-style: $style;
+      src: url('#{$file-path}.eot');
+      src: url('#{$file-path}.eot?#iefix')               format('embedded-opentype'),
+           url('#{$file-path}.woff')                     format('woff'),
+           url('#{$file-path}.ttf')                      format('truetype')
+  }
+}

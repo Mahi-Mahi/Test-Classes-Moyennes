@@ -1,0 +1,59 @@
+<div class="wrapper question-{{question_idx+1}}">
+	<header class="header clearfix">
+		<div class="header__body left">
+			<img src="/test-classes-moyennes-app/images/logo-le-parisien-magazine.png" alt="Le Parisien Magazine" />
+			<div class="question-title">{{question_idx+1}}. {{question.text}}</div><!-- .question-title -->
+		</div><!-- .left -->
+		<div class="tagline right">
+			Faites-vous partie des <strong><em>Classes</em> moyennes</strong> <span>?</span>
+		</div><!-- .tagline -->
+	</header>
+	<div class="main">
+		<div class="steps">
+			<div class="steps-inner">
+				étapes
+				<ul>
+					<li class="step-item step-1">1</li>
+					<li class="step-item step-2">2</li>
+					<li class="step-item step-3">3</li>
+					<li class="step-item step-4">4</li>
+					<li class="step-item step-5">5</li>
+					<li class="step-item step-6">6</li>
+				</ul>
+			</div><!-- .steps-inner -->
+		</div><!-- .steps -->
+		<div class="content">
+			<form name="content__form" class="content__form" action="about:blank">
+				<p>
+					<strong>{{question.prefix}} :</strong>
+				</p>
+				<div class="additional">
+					{{question.description}}
+				</div><!-- .additional -->
+				<ul>
+					<li ng-repeat="answer in question.answers" ng-click="showNextQuestionBtn()" class="question-item">
+						<input type="radio" name="answers{{question_idx}}" value="{{answer.idx}}" id="answers-{{answer.idx}}" />
+						<label for="answers-{{answer.idx}}">{{answer.text}}</label>
+					</li>
+				</ul>
+				<div class="bt-next">
+					<button type="button" ng-click="nextQuestion()">Question suivante</button>
+				</div>
+				<div class="bt-next bt-next--final">
+					<button type="button">Résultats</button>
+				</div>
+			</form>
+		</div><!-- .content -->
+	</div><!-- .main -->
+	<footer class="footer clearfix">
+		<div class="left methodo">
+			<a href="#">Méthodologie</a>
+		</div>
+		<ul class="unstyled footer-social__list right">
+			<li class="footer-social__item"><a href="#" class="icon-facebook">Partager sur facebook</a></li>
+			<li class="footer-social__item"><a href="#" class="icon-twitter">Twitter</a></li>
+			<li class="footer-social__item"><a href="#" class="icon-email">Partager via Email</a></li>
+		</ul>
+	</footer><!-- .footer -->
+</div><!-- .wrapper -->
+<div id="methodo" ng-include="'/test-classes-moyennes-app/partials/methodo.html'"></div><!-- #methodo -->
