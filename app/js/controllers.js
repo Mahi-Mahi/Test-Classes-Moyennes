@@ -9,6 +9,12 @@ define(['angular', 'services'], function(angular) {
 		.controller('homeCtrl', ['$scope', 'version',
 			function($scope, version) {
 				$scope.scopedAppVersion = version;
+
+				jQuery('.methodo, .bt-go--ok').find('a').unbind('click').on('click', function(event) {
+					jQuery('#methodo').slideToggle('normal');
+					event.preventDefault();
+				});
+
 			}
 		])
 

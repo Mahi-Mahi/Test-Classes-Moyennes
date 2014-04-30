@@ -145,6 +145,11 @@ define([], function() {
 
 		// result-nok
 
+		jQuery('.methodo, .bt-go--ok').find('a').on('click', function(event) {
+			jQuery('#methodo').slideToggle('normal');
+			event.preventDefault();
+		});
+
 		$scope.$apply();
 
 	}];
