@@ -281,7 +281,7 @@ textarea {
     margin: 0;
     padding: 0; }
   .tagline span {
-    background: #f5f4f2;
+    background: #f6f5f3;
     display: inline-block;
     font: normal 42px 'Landmark Inline', Arial, Verdana, sans-serif;
     position: absolute;
@@ -306,7 +306,7 @@ textarea {
   #methodo .tagline {
     margin: -2px 0 0 0; }
     #methodo .tagline span {
-      background: #fbfaf9; }
+      background: #fdfdfd; }
   .results .tagline {
     margin: 0 0 0 55px; }
 
@@ -638,8 +638,6 @@ textarea {
       top: 0;
       width: 43px; }
 
-.bt-next--final {
-  display: none; }
   .bt-next--final button {
     color: #000; }
     .bt-next--final button:after {
@@ -778,7 +776,10 @@ textarea {
   top: 0;
   font-size: 14px;
   z-index: 10;
-  height: 90%; }
+  height: 90%;
+  height:600px;
+  overflow:auto;
+}
   #methodo p {
     display: block;
     margin: 0;

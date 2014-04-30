@@ -4,3 +4,5 @@ app/js/min
 app/js/**/min
 **/*-ck.js
 config.codekit
+
+app/scss/style.css

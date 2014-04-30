@@ -189,7 +189,7 @@
 		}, {
 			"prefix": "Le revenu mensuel de votre ménage s’élève à",
 			"text": "Vos revenus",
-			"description": "Additionnez votre salaire net et, le cas échéant, celui de votre conjoint, les allocations et prestations sociales dont vous bénéficiez et vos revenus du capital (ramenés au mois). <br />Retirez de cette somme le montant de vos impôts (impôt sur le revenu et taxes locales, ramenés au mois).",
+			"description": "Additionnez votre salaire net et, le cas échéant, celui de votre conjoint, les allocations et prestations sociales dont vous bénéficiez et vos revenus du capital (ramenés au mois). Retirez de cette somme le montant de vos impôts (impôt sur le revenu et taxes locales, ramenés au mois).",
 			"answers": []
 		}, {
 			"prefix": "Votre patrimoine s’élève à ",

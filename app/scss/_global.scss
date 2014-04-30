@@ -216,7 +216,7 @@ textarea { overflow: auto; vertical-align: top; resize: vertical; }
 	#methodo & {
 		margin:-2px 0 0 0;
 		span {
-			background:#fbfaf9;
+			background:#fdfdfd;
 		}
 	}
 	.results & {
@@ -521,7 +521,6 @@ textarea { overflow: auto; vertical-align: top; resize: vertical; }
 }
 
 .bt-next--final {
-	display: none;
 	button {
 		color:#000;
 		&:after {
@@ -689,7 +688,8 @@ textarea { overflow: auto; vertical-align: top; resize: vertical; }
 	top:0;
 	font-size: 14px;
 	z-index:10;
-	height:90%;
+	height:600px;
+	overflow:auto;
 	p {
 		display: block;
 		margin: 0;
