@@ -45,8 +45,7 @@ gulp.task('html', function() {
 gulp.task('bower', function() {
     gulp.src('app/vendor', {
         read: false
-    })
-        .pipe(clean());
+    });
     bower()
         .pipe(gulp.dest('app/vendor/'));
 });
@@ -60,17 +59,11 @@ gulp.task('clean', function() {
 
 });
 
-// data
-gulp.task('data', function() {
-    gulp.src(['data/data.json'])
-        .pipe(gulp.dest('app/data'));
-});
-
 // default
 gulp.task('default', []);
 
 // setup
-gulp.task('setup', ['clean', 'bower', 'default']);
+gulp.task('setup', ['bower', 'default']);
 
 // watch
 gulp.task('watch', function() {

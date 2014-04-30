@@ -1,0 +1,214 @@
+{
+	"questions": [{
+			"prefix": "Vous êtes ",
+			"text": "Votre ménage",
+			"answers": [{
+				"idx": "A",
+				"text": "célibataire sans enfant",
+				"questions": {
+					"4": {
+						"answers": [{
+							"idx": "A",
+							"text": "moins de 814 euros"
+						}, {
+							"idx": "B",
+							"text": "De 814 à 1183 euros"
+						}, {
+							"idx": "C",
+							"text": "De 1183 à 2177 euros"
+						}, {
+							"idx": "D",
+							"text": "Plus de 2177 euros"
+						}]
+					}
+				}
+			}, {
+				"idx": "B",
+				"text": "célibataire avec enfant(s)",
+				"questions": {
+					"4": {
+						"answers": [{
+							"idx": "A",
+							"text": "moins de 1114 euros"
+						}, {
+							"idx": "B",
+							"text": "De 1114 à 1589 euros"
+						}, {
+							"idx": "C",
+							"text": "De 1589 à 2987 euros"
+						}, {
+							"idx": "D",
+							"text": "Plus de 2987 euros"
+						}]
+					}
+				}
+			}, {
+				"idx": "C",
+				"text": "en couple sans enfants",
+				"questions": {
+					"4": {
+						"answers": [{
+							"idx": "A",
+							"text": "moins de 1612 euros"
+						}, {
+							"idx": "B",
+							"text": "De 1612 à 2251 euros"
+						}, {
+							"idx": "C",
+							"text": "De 2251 à 4280 euros"
+						}, {
+							"idx": "D",
+							"text": "Plus de 4280 euros"
+						}]
+					}
+				}
+			}, {
+				"idx": "D",
+				"text": "en couple avec un enfant",
+				"questions": {
+					"4": {
+						"answers": [{
+							"idx": "A",
+							"text": "moins de 1876 euros"
+						}, {
+							"idx": "B",
+							"text": "De 1876 à 2773 euros"
+						}, {
+							"idx": "C",
+							"text": "De 2773 à 4890 euros"
+						}, {
+							"idx": "D",
+							"text": "Plus de 4890 euros"
+						}]
+					}
+				}
+			}, {
+				"idx": "E",
+				"text": "en couple avec deux enfants",
+				"questions": {
+					"4": {
+						"answers": [{
+							"idx": "A",
+							"text": "moins de 2189 euros"
+						}, {
+							"idx": "B",
+							"text": "De 2189 à 3122 euros"
+						}, {
+							"idx": "C",
+							"text": "De 3122 à 5567 euros"
+						}, {
+							"idx": "D",
+							"text": "Plus de 5567 euros"
+						}]
+					}
+				}
+			}, {
+				"idx": "F",
+				"text": "en couple avec trois enfants ou plus",
+				"questions": {
+					"4": {
+						"answers": [{
+							"idx": "A",
+							"text": "moins de 2181 euros"
+						}, {
+							"idx": "B",
+							"text": "De 2181 à 3001 euros"
+						}, {
+							"idx": "C",
+							"text": "De 3001 à 5621 euros"
+						}, {
+							"idx": "D",
+							"text": "Plus de 5621 euros"
+						}]
+					}
+				}
+			}]
+		}, {
+			"prefix": "Vous avez ",
+			"text": "Votre âge",
+			"answers": [{
+				"idx": "A",
+				"text": "de 20 à 24 ans"
+			}, {
+				"idx": "B",
+				"text": "de 25 à 29 ans"
+			}, {
+				"idx": "C",
+				"text": "de 30 à 39 ans"
+			}, {
+				"idx": "D",
+				"text": "de 40 à 49 ans"
+			}, {
+				"idx": "E",
+				"text": "de 50 à 59 ans"
+			}, {
+				"idx": "F",
+				"text": "60 ans ou plus"
+			}]
+		}, {
+			"prefix": "Vous...",
+			"text": "Votre niveau d’études",
+			"answers": [{
+				"idx": "A",
+				"text": "n’avez aucun diplôme ou un certificat d’études"
+			}, {
+				"idx": "B",
+				"text": "avez juste le brevet des collèges"
+			}, {
+				"idx": "C",
+				"text": "avez un CAP ou un BEP"
+			}, {
+				"idx": "D",
+				"text": "avez le bac ou le brevet professionnel"
+			}, {
+				"idx": "E",
+				"text": "avez un diplôme Bac + 2"
+			}, {
+				"idx": "F",
+				"text": "avez un diplôme supérieur à Bac + 2"
+			}]
+		}, {
+			"prefix": "Vous êtes actuellement ou avez été, avant votre retraite ",
+			"text": "Votre catégorie socio-professionnelle",
+			"answers": [{
+				"idx": "A",
+				"text": "ouvrier"
+			}, {
+				"idx": "B",
+				"text": "employé"
+			}, {
+				"idx": "C",
+				"text": "agriculteur, artisan, chef d’entreprise"
+			}, {
+				"idx": "D",
+				"text": "profession intermédiaire (technicien, agent de maîtrise...)"
+			}, {
+				"idx": "E",
+				"text": "cadre supérieur"
+			}]
+		}, {
+			"prefix": "Le revenu mensuel de votre ménage s’élève à",
+			"text": "Vos revenus",
+			"description": "Additionnez votre salaire net et, le cas échéant, celui de votre conjoint, les allocations et prestations sociales dont vous bénéficiez et vos revenus du capital (ramenés au mois). <br />Retirez de cette somme le montant de vos impôts (impôt sur le revenu et taxes locales, ramenés au mois).",
+			"answers": []
+		}, {
+			"prefix": "Votre patrimoine s’élève à ",
+			"text": "Votre patrimoine",
+			"description": "Additionnez la valeur de tous vos biens : logements, terrains, comptes et livrets bancaires, actions en bourse... et retirez le montant de vos dettes (prêts immobiliers, crédits à la consommation).",
+			"answers": [{
+				"idx": "A",
+				"text": "moins de 7 661 euros"
+			}, {
+				"idx": "B",
+				"text": "de 7661 à 211 167 euros"
+			}, {
+				"idx": "C",
+				"text": "de 211 167 à 384 091 euros"
+			}, {
+				"idx": "D",
+				"text": "plus de 384 091 euros"
+			}]
+		}
+
+	]
+}

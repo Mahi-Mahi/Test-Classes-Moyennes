@@ -1,0 +1,165 @@
+<p><code>es5-shim.js</code> and <code>es5-shim.min.js</code> monkey-patch a JavaScript context to
+contain all EcmaScript 5 methods that can be faithfully emulated with a
+legacy JavaScript engine.</p>
+
+<p><code>es5-sham.js</code> and <code>es5-sham.min.js</code> monkey-patch other ES5 methods as
+closely as possible.  For these methods, as closely as possible to ES5
+is not very close.  Many of these shams are intended only to allow code
+to be written to ES5 without causing run-time errors in older engines.
+In many cases, this means that these shams cause many ES5 methods to
+silently fail.  Decide carefully whether this is what you want.</p>
+
+<h2>Tests</h2>
+
+<p>The tests are written with the Jasmine BDD test framework.
+To run the tests, navigate to &lt;root-folder>/tests/.</p>
+
+<p>In order to run against the shim-code, the tests attempt to kill the current
+implementation of the missing methods. This happens in &lt;root-folder>/tests/helpers/h-kill.js.
+So in order to run the tests against the built-in methods, invalidate that file somehow
+(comment-out, delete the file, delete the script-tag, etc.).</p>
+
+<h2>Shims</h2>
+
+<h3>Complete tests</h3>
+
+<ul>
+<li>Array.prototype.every</li>
+<li>Array.prototype.filter</li>
+<li>Array.prototype.forEach</li>
+<li>Array.prototype.indexOf</li>
+<li>Array.prototype.lastIndexOf</li>
+<li>Array.prototype.map</li>
+<li>Array.prototype.some</li>
+<li>Array.prototype.reduce</li>
+<li>Array.prototype.reduceRight</li>
+<li>Array.isArray</li>
+<li>Date.now</li>
+<li>Date.prototype.toJSON</li>
+<li>Function.prototype.bind
+
+<ul>
+<li>/!\ Caveat: the bound function&rsquo;s length is always 0.</li>
+<li>/!\ Caveat: the bound function has a prototype property.</li>
+<li>/!\ Caveat: bound functions do not try too hard to keep you
+from manipulating their <code>arguments</code> and <code>caller</code> properties.</li>
+<li>/!\ Caveat: bound functions don&rsquo;t have checks in <code>call</code> and
+<code>apply</code> to avoid executing as a constructor.</li>
+</ul>
+</li>
+<li>Object.keys</li>
+<li>String.prototype.trim</li>
+</ul>
+
+
+<h3>Untested</h3>
+
+<ul>
+<li>Date.parse (for ISO parsing)</li>
+<li>Date.prototype.toISOString</li>
+</ul>
+
+
+<h2>Shams</h2>
+
+<ul>
+<li><p>/?\ Object.create</p>
+
+<p>  For the case of simply &ldquo;begetting&rdquo; an object that
+  inherits prototypically from another, this should work
+  fine across legacy engines.</p>
+
+<p>  /!\ Object.create(null) will work only in browsers that
+  support prototype assignment.  This creates an object
+  that does not have any properties inherited from
+  Object.prototype.  It will silently fail otherwise.</p>
+
+<p>  /!\ The second argument is passed to
+  Object.defineProperties which will probably fail
+  silently.</p></li>
+<li><p>/?\ Object.getPrototypeOf</p>
+
+<p>  This will return &ldquo;undefined&rdquo; in some cases.  It uses
+  <strong>proto</strong> if it&rsquo;s available.  Failing that, it uses
+  constructor.prototype, which depends on the constructor
+  property of the object&rsquo;s prototype having not been
+  replaced.  If your object was created like this, it
+  won&rsquo;t work:</p>
+
+<pre><code>  function Foo() {
+  }
+  Foo.prototype = {};
+</code></pre>
+
+<p>  Because the prototype reassignment destroys the
+  constructor property.</p>
+
+<p>  This will work for all objects that were created using
+  <code>Object.create</code> implemented with this library.</p></li>
+<li><p>/!\ Object.getOwnPropertyNames</p>
+
+<p>  This method uses Object.keys, so it will not be accurate
+  on legacy engines.</p></li>
+<li><p>Object.isSealed</p>
+
+<p>  Returns &ldquo;false&rdquo; in all legacy engines for all objects,
+  which is conveniently guaranteed to be accurate.</p></li>
+<li><p>Object.isFrozen</p>
+
+<p>  Returns &ldquo;false&rdquo; in all legacy engines for all objects,
+  which is conveniently guaranteed to be accurate.</p></li>
+<li><p>Object.isExtensible</p>
+
+<p>  Works like a charm, by trying very hard to extend the
+  object then redacting the extension.</p></li>
+</ul>
+
+
+<h3>Fail silently</h3>
+
+<ul>
+<li><p>/!\ Object.getOwnPropertyDescriptor</p>
+
+<p>  The behavior of this shim does not conform to ES5.  It
+  should probably not be used at this time, until its
+  behavior has been reviewed and been confirmed to be
+  useful in legacy engines.</p></li>
+<li><p>/!\ Object.defineProperty</p>
+
+<p>  This method will silently fail to set &ldquo;writable&rdquo;,
+  &ldquo;enumerable&rdquo;, and &ldquo;configurable&rdquo; properties.</p>
+
+<p>  Providing a getter or setter with &ldquo;get&rdquo; or &ldquo;set&rdquo; on a
+  descriptor will silently fail on engines that lack
+  &ldquo;<strong>defineGetter</strong>&rdquo; and &ldquo;<strong>defineSetter</strong>&rdquo;, which include
+  all versions of IE up to version 8 so far.</p>
+
+<p>  IE 8 provides a version of this method but it only works
+  on DOM objects.  Thus, the shim will not get installed
+  and attempts to set &ldquo;value&rdquo; properties will fail
+  silently on non-DOM objects.</p>
+
+<p>  https://github.com/kriskowal/es5-shim/issues#issue/5</p></li>
+<li><p>/!\ Object.defineProperties</p>
+
+<p>  This uses the Object.defineProperty shim</p></li>
+<li><p>Object.seal</p>
+
+<p>  Silently fails on all legacy engines.  This should be
+  fine unless you are depending on the safety and security
+  provisions of this method, which you cannot possibly
+  obtain in legacy engines.</p></li>
+<li><p>Object.freeze</p>
+
+<p>  Silently fails on all legacy engines.  This should be
+  fine unless you are depending on the safety and security
+  provisions of this method, which you cannot possibly
+  obtain in legacy engines.</p></li>
+<li><p>Object.preventExtensions</p>
+
+<p>  Silently fails on all legacy engines.  This should be
+  fine unless you are depending on the safety and security
+  provisions of this method, which you cannot possibly
+  obtain in legacy engines.</p></li>
+</ul>
+

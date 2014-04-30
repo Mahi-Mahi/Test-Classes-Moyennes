@@ -1,0 +1,42 @@
+<h1>All-in-one console.log wrapper</h1>
+
+<p>Just drop consolelog.js in your project and start passing data to <code>log()</code>. Whichever browser you&rsquo;re testing in, you&rsquo;ll see your data in the console &mdash; if the browser doesn&rsquo;t have a console, Firebug Lite will load. You can pass any variable type: strings, objects, arrays, functions, etc.</p>
+
+<p><strong>Demo: <a href="http://patik.github.io/console.log-wrapper/">patik.github.io/console.log-wrapper</a></strong></p>
+
+<h2>Detail Print</h2>
+
+<p>This is an optional plugin to provide help information about the data that is being logged, especially in IE and older browsers. Just include <a href="https://github.com/patik/console.log-wrapper/blob/master/consolelog.detailprint.js">consolelog.detailprint.js</a> along with <a href="https://github.com/patik/console.log-wrapper/blob/master/consolelog.js">consolelog.js</a>.</p>
+
+<p>Firebug, WebKit&rsquo;s Developer Tools, and Opera&rsquo;s Dragonfly print useful, interactive items to the console. For example:</p>
+
+<p><code>js
+console.log( "Here's a string",
+             3.14,
+             {"alpha": 5, "bravo": false},
+             document.getElementById('charlie'),
+             new Date()
+           );
+</code></p>
+
+<p>Results in:</p>
+
+<p><img src="https://raw.github.com/patik/console.log-wrapper/master/demo/firebug.png" alt="Firebug running in Firefox" /></p>
+
+<p>Some browsers that have a primitive console &mdash; ones that does not expand arrays, links DOM elements to the source code, prints objects as <code>[object Object]</code> rather than listing their properties, etc.</p>
+
+<p><img src="https://raw.github.com/patik/console.log-wrapper/master/demo/ie8-without-detail-print.png" alt="IE8 without Detail Print" /></p>
+
+<p>Some cannot accept multiple arguments to a single <code>console.log</code> call. This includes IE 7/8/9/10, iOS 5 and older, and Opera 11 and older, among others.</p>
+
+<p>Using the <code>detailPrint</code> companion plugin, special objects are presented in a more readable manner.</p>
+
+<p><img src="https://raw.github.com/patik/console.log-wrapper/master/demo/ie8-with-detail-print.png" alt="IE8 with Detail Print" /></p>
+
+<h2>Demo</h2>
+
+<p><a href="http://patik.github.io/console.log-wrapper/">patik.github.io/console.log-wrapper</a></p>
+
+<h2>Documentation</h2>
+
+<p><a href="http://patik.com/blog/complete-cross-browser-console-log">patik.com/blog/complete-cross-browser-console-log</a></p>

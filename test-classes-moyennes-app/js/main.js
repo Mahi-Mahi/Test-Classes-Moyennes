@@ -2,7 +2,7 @@
 /* global angular */
 
 require.config({
-	urlArgs: "bust=" + '1398863447543',
+	urlArgs: "bust=" + '1398864251047',
 	paths: {
 		angular: '/test-classes-moyennes-app/vendor/angular/angular',
 		angularRoute: '/test-classes-moyennes-app/vendor/angular-route/angular-route',

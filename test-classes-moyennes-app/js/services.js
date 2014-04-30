@@ -10,7 +10,7 @@ define(['angular'], function(angular) {
 
 	angular.module('dataService', ['ngResource'])
 		.factory('dataService', function($resource) {
-			return $resource('/test-classes-moyennes-app/data/data.json?1398863447543', {}, {
+			return $resource('/test-classes-moyennes-app/data/data.json?1398864251047', {}, {
 				getData: {
 					method: 'GET',
 					isArray: false
