@@ -309,7 +309,12 @@ textarea {
       background: #fdfdfd; }
   .results .tagline {
     margin: 0 0 0 55px; }
-
+  .tagline a {
+    text-decoration: none;
+  }
+  #methodo li ,  #methodo p {
+    font-size:12px;
+  }
 .bt-go {
   padding: 60px 0 0 0; }
   .bt-go a {
@@ -716,7 +721,12 @@ textarea {
   font-size: 11px;
   top: 7px;
   left: 1px; }
-
+  .result-answer .bullet-no {
+    background:#ED1C24;
+  }
+  .result-answer .bullet-yes {
+    background:#69933E;
+  }
 .footer {
   padding: 30px 0 12px 0; }
 

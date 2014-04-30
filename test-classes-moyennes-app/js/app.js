@@ -22,7 +22,6 @@ define([
 		'myApp.controllers',
 		'myApp.filters',
 		'myApp.services',
-		'myApp.directives',
-		'dataService'
+		'myApp.directives'
 	]);
 });

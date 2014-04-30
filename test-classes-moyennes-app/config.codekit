@@ -99,6 +99,28 @@
 		"outputPathIsSetByUser": 0,
 		"processed": 0
 		},
+	"\/images\/icon\/icon-results-nok.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 1950,
+		"inputAbbreviatedPath": "\/images\/icon\/icon-results-nok.png",
+		"outputAbbreviatedPath": "\/images\/icon\/icon-results-nok.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/images\/icon\/icon-results-ok.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 1727,
+		"inputAbbreviatedPath": "\/images\/icon\/icon-results-ok.png",
+		"outputAbbreviatedPath": "\/images\/icon\/icon-results-ok.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
 	"\/images\/icon\/icon-twitter-large.png": {
 		"fileType": 32768,
 		"ignore": 0,
@@ -142,6 +164,15 @@
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"processed": 0
+		},
+	"\/index.html": {
+		"fileType": 8192,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/index.html",
+		"outputAbbreviatedPath": "No Output Path",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0
 		},
 	"\/js\/app.js": {
 		"fileType": 64,
@@ -220,12 +251,12 @@
 		"outputStyle": 1,
 		"syntaxCheckerStyle": 1
 		},
-	"\/js\/controllers\/resultsCtrl.js": {
+	"\/js\/controllers\/testCtrl.js": {
 		"fileType": 64,
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/js\/controllers\/resultsCtrl.js",
-		"outputAbbreviatedPath": "\/js\/controllers\/min\/resultsCtrl-ck.js",
+		"inputAbbreviatedPath": "\/js\/controllers\/testCtrl.js",
+		"outputAbbreviatedPath": "\/js\/controllers\/min\/testCtrl-ck.js",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"outputStyle": 1,
@@ -308,6 +339,17 @@
 		"outputStyle": 1,
 		"syntaxCheckerStyle": 1
 		},
+	"\/js\/min\/services-ck.js": {
+		"fileType": 64,
+		"ignore": 1,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/js\/min\/services-ck.js",
+		"outputAbbreviatedPath": "\/js\/min\/min\/services-ck-ck.js",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"outputStyle": 1,
+		"syntaxCheckerStyle": 1
+		},
 	"\/js\/routes.js": {
 		"fileType": 64,
 		"ignore": 0,
@@ -339,6 +381,15 @@
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0
 		},
+	"\/partials\/index.html": {
+		"fileType": 8192,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/partials\/index.html",
+		"outputAbbreviatedPath": "No Output Path",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0
+		},
 	"\/partials\/methodo.html": {
 		"fileType": 8192,
 		"ignore": 0,
@@ -357,11 +408,11 @@
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0
 		},
-	"\/partials\/share-container.html": {
+	"\/partials\/test.html": {
 		"fileType": 8192,
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/partials\/share-container.html",
+		"inputAbbreviatedPath": "\/partials\/test.html",
 		"outputAbbreviatedPath": "No Output Path",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0
