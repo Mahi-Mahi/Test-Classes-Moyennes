@@ -30,20 +30,20 @@ define([], function() {
 		// Studies
 		switch ($rootScope.results[2]) {
 			case 'A':
-				jQuery('.studies .result-answer span').html("Non");
+				jQuery('.studies .result-answer span').html("Non").parent().addClass('bullet-no');
 				jQuery('.studies .media-block .media-block').html("Vous faites partie des 27% de Français non diplômés ou titulaires d'un certificat d'études. Vous vous situez juste en-dessous d'une sorte de « classe moyenne du diplôme » qui réunit 49% de la population ayant atteint un niveau d'études compris entre le brevet des collèges et le bac.");
 				studies = -1;
 				break;
 			case 'B':
 			case 'C':
 			case 'D':
-				jQuery('.studies .result-answer span').html("Oui");
+				jQuery('.studies .result-answer span').html("Oui").parent().addClass('bullet-yes');
 				jQuery('.studies .media-block .media-block').html("Vous avez atteint comme 49% des Français, un niveau d'études compris entre le brevet des collèges et le bac. Vous appartenez à une sorte de « classe moyenne du diplôme », située entre les 27% non diplômés ou titulaires d'un certificat d'études et les 24% ayant obtenu un diplôme égal ou supérieur à Bac +2.");
 				studies = 1;
 				break;
 			case 'E':
 			case 'F':
-				jQuery('.studies .result-answer span').html("Non");
+				jQuery('.studies .result-answer span').html("Non").parent().addClass('bullet-no');
 				jQuery('.studies .media-block .media-block').html("Vous faites partie des 24% de Français les plus diplômés, avec un niveau scolaire supérieur ou égal à Bac +2. Vous vous situez juste au-dessus d'une sorte de « classe moyenne du diplôme » qui réunit 49% de la population ayant atteint un niveau d'études compris entre le brevet des collèges et le bac.");
 				studies = -1;
 				break;
@@ -62,7 +62,7 @@ define([], function() {
 				jQuery('.csp .media-block .media-block').html("On estime qu’environ 20% des cadres supérieurs et 50 % des chefs d’entreprise et agriculteurs pourraient être rangés dans les classes moyennes.");
 				break;
 			case 'D':
-				jQuery('.csp .result-answer span').html("Oui");
+				jQuery('.csp .result-answer span').html("Oui").parent().addClass('bullet-yes');
 				jQuery('.csp .media-block .media-block').html("Vous êtes au cœur des classes moyennes.");
 				csp = 1;
 				break;
@@ -72,17 +72,17 @@ define([], function() {
 		switch ($rootScope.results[4]) {
 			case 'A':
 			case 'B':
-				jQuery('.earnings .result-answer span').html("Non");
+				jQuery('.earnings .result-answer span').html("Non").parent().addClass('bullet-no');
 				jQuery('.earnings .media-block .media-block').html("Vous faites partie des 30% des ménages les plus modestes, dont les revenus sont inférieurs à ceux des classes moyennes.");
 				earnings = -1;
 				break;
 			case 'C':
-				jQuery('.earnings .result-answer span').html("Oui");
+				jQuery('.earnings .result-answer span').html("Oui").parent().addClass('bullet-yes');
 				jQuery('.earnings .media-block .media-block').html("Vous faites partie des classes moyennes, comprises entre les 30% des ménages les plus modestes et les 20% des ménages les plus riches.");
 				earnings = 1;
 				break;
 			case 'D':
-				jQuery('.earnings .result-answer span').html("Non");
+				jQuery('.earnings .result-answer span').html("Non").parent().addClass('bullet-no');
 				jQuery('.earnings .media-block .media-block').html("Vous faites partie des 20% des ménages les plus riches, dont les revenus sont supérieurs à ceux des classes moyennes.");
 				earnings = -1;
 				break;
@@ -91,18 +91,18 @@ define([], function() {
 		// Estate
 		switch ($rootScope.results[5]) {
 			case 'A':
-				jQuery('.estate .result-answer span').html("Non");
+				jQuery('.estate .result-answer span').html("Non").parent().addClass('bullet-no');
 				jQuery('.estate .media-block .media-block').html("Vous faites partie des 30% des ménages les moins riches, dont le patrimoine est inférieur à celui des classes moyennes.");
 				estate = -1;
 				break;
 			case 'B':
-				jQuery('.estate .result-answer span').html("Oui");
+				jQuery('.estate .result-answer span').html("Oui").parent().addClass('bullet-yes');
 				jQuery('.estate .media-block .media-block').html("Vous faites partie des classes moyennes, comprises entre les 30% des ménages les moins riches et les 20% des ménages les mieux dotés. Votre patrimoine est constitué en majeure partie de biens immobiliers.");
 				estate = 1;
 				break;
 			case 'C':
 			case 'D':
-				jQuery('.estate .result-answer span').html("Non");
+				jQuery('.estate .result-answer span').html("Non").parent().addClass('bullet-no');
 				jQuery('.estate .media-block .media-block').html("Vous faites partie des 20% des ménages les mieux dotés, dont le patrimoine est supérieur à celui des classes moyennes.");
 				estate = -1;
 				break;
