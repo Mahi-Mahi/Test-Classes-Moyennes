@@ -3,7 +3,7 @@
 "use strict";
 
 define([], function() {
-	return ['$scope', '$rootScope', function($scope, $rootScope) {
+	return ['$scope', '$rootScope', 'configService', function($scope, $rootScope, configService) {
 		// You can access the scope of the controller from here
 
 		console.log("results");
@@ -97,7 +97,7 @@ define([], function() {
 				break;
 			case 'B':
 				jQuery('.estate .result-answer span').html("Oui");
-				jQuery('.estate .media-block .media-block').html("Vous faites partie des classes moyennes, comprises entre les 30% des ménages les moins riches et les 20% des ménages les mieux dotés. Votre patrimoine est constitué en majeure partie de biens immobiliers.");
+				jQuery('.estate .media-block .media-block').html("Vous faites partie des classes moyennes, comprises entre les 30% des ménages les moins riches et les 20% des ménages les mieux dotés.");
 				estate = 1;
 				break;
 			case 'C':
@@ -130,15 +130,15 @@ define([], function() {
 		if (cm) {
 			jQuery('.result-status').addClass('result-ok').find('.tagline').html("Vous faites partie des <strong>classes moyennes</strong>");
 
-			jQuery('.icon-facebook').attr('href', "https://www.facebook.com/sharer/sharer.php?u=" + document.location.href + "&t=" + encodeURIComponent("Selon le test du Parisien Magazine, je fais partie des classes moyennes. Et vous ? " + document.location.href));
-			jQuery('.icon-twitter').attr('href', "http://twitter.com/home?status=" + encodeURIComponent("Selon le test de @LeParisienMag, je fais partie des classes moyennes. Et vous? " + document.location.href));
+			jQuery('.icon-facebook').attr('href', "https://www.facebook.com/sharer/sharer.php?u=" + document.location.href + "&t=" + encodeURIComponent("Selon le test du Parisien Magazine, je fais partie des classes moyennes. Et vous ? " + configService.share_url));
+			jQuery('.icon-twitter').attr('href', "http://twitter.com/home?status=" + encodeURIComponent("Selon le test de @LeParisienMag, je fais partie des classes moyennes. Et vous? " + configService.share_url));
 
 			ga('send', 'event', 'result', 'ClassesMoyennes');
 		} else {
 			jQuery('.result-status').addClass('result-nok').find('.tagline').html("Vous ne faites pas partie des <strong>classes moyennes</strong>");
 
-			jQuery('.icon-facebook').attr('href', "https://www.facebook.com/sharer/sharer.php?u=" + document.location.href + "&t=" + encodeURIComponent("Selon le test du Parisien Magazine, je ne fais pas partie des classes moyennes. Et vous ? " + document.location.href));
-			jQuery('.icon-twitter').attr('href', "http://twitter.com/home?status=" + encodeURIComponent("Selon le test de @LeParisienMag, je ne fais pas partie des classes moyennes. Et vous? " + document.location.href));
+			jQuery('.icon-facebook').attr('href', "https://www.facebook.com/sharer/sharer.php?u=" + document.location.href + "&t=" + encodeURIComponent("Selon le test du Parisien Magazine, je ne fais pas partie des classes moyennes. Et vous ? " + configService.share_url));
+			jQuery('.icon-twitter').attr('href', "http://twitter.com/home?status=" + encodeURIComponent("Selon le test de @LeParisienMag, je ne fais pas partie des classes moyennes. Et vous? " + configService.share_url));
 
 			ga('send', 'event', 'result', 'Pas-ClassesMoyennes');
 		}

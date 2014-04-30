@@ -3,7 +3,7 @@
 "use strict";
 
 define([], function() {
-	return ['$scope', '$rootScope', '$location', '$route', 'dataService', function($scope, $rootScope, $location, $route, dataService) {
+	return ['$scope', '$rootScope', '$location', '$route', 'dataService', 'configService', function($scope, $rootScope, $location, $route, dataService, configService) {
 		// You can access the scope of the controller from here
 
 		console.log("init test");
@@ -25,7 +25,7 @@ define([], function() {
 			jQuery('.bt-next').animate({
 				opacity: 1
 			}, 500);
-			jQuery('.bt-next').find('button').css('cursor','pointer');
+			jQuery('.bt-next').find('button').css('cursor', 'pointer');
 			// }
 
 		};
@@ -55,10 +55,10 @@ define([], function() {
 
 		var showQuestion = function() {
 
-			jQuery('.bt-next').css('cursor','default').animate({
+			jQuery('.bt-next').css('cursor', 'default').animate({
 				opacity: 0
 			}, 100);
-			jQuery('.bt-next').find('button').css('cursor','default');
+			jQuery('.bt-next').find('button').css('cursor', 'default');
 			if ($scope.question_idx < $scope.questions.length) {
 
 				$scope.question = $scope.questions[$scope.question_idx];
@@ -67,7 +67,7 @@ define([], function() {
 				$location.path("/app/resultats");
 			}
 
-			if ( $scope.question_idx == ($scope.questions.length - 1) ) {
+			if ($scope.question_idx == ($scope.questions.length - 1)) {
 				jQuery('.bt-next').addClass('bt-next--final').find('button').html('Résultats');
 			}
 
@@ -91,6 +91,9 @@ define([], function() {
 			showQuestion();
 
 		}
+
+		jQuery('.icon-facebook').attr('href', "https://www.facebook.com/sharer/sharer.php?u=" + document.location.href + "&t=" + encodeURIComponent(configService.share_text + configService.share_url));
+		jQuery('.icon-twitter').attr('href', "http://twitter.com/home?status=" + encodeURIComponent(configService.share_status + configService.share_url));
 
 		jQuery('.methodo, .bt-go--ok').find('a').on('click', function(event) {
 			jQuery('#methodo').slideToggle('normal');
