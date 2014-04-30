@@ -8,7 +8,7 @@ define([], function() {
 
 		console.log("init test");
 
-		var debug = false;
+		var debug = true;
 
 		$scope.answers = [];
 		$rootScope.results = {};
@@ -19,15 +19,12 @@ define([], function() {
 				return;
 			}
 
-			// if (false && debug) {
-			// 	$scope.nextQuestion();
-			// } else {
-			jQuery('.bt-next').animate({
-				opacity: 1
-			}, 500);
-			jQuery('.bt-next').find('button').css('cursor', 'pointer');
-			// }
+			$scope.nextQuestion();
 
+			// jQuery('.bt-next').animate({
+			// 	opacity: 1
+			// }, 500);
+			// jQuery('.bt-next').find('button').css('cursor', 'pointer');
 		};
 
 		$scope.nextQuestion = function() {

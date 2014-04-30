@@ -8,16 +8,10 @@ define([], function() {
 
 		console.log("results");
 
-		var debug = true;
+		// $rootScope.results = ['A', 'A', 'C', 'C', 'A'];
 
 		if (typeof($rootScope.results) == 'undefined') {
-			if (debug) {
-
-				$rootScope.results = ['B', 'A', 'A', 'A', 'A', 'A'];
-
-			} else {
-				document.location = '/app';
-			}
+			document.location = '/app';
 		}
 
 		var studies = 0,
@@ -28,7 +22,7 @@ define([], function() {
 		console.log($rootScope.results);
 
 		// Studies
-		switch ($rootScope.results[2]) {
+		switch ($rootScope.results[1]) {
 			case 'A':
 				jQuery('.studies .result-answer span').html("Non").parent().addClass('bullet-no');
 				jQuery('.studies .media-block .media-block').html("Vous faites partie des 27% de Français non diplômés ou titulaires d'un certificat d'études. Vous vous situez juste en-dessous d'une sorte de « classe moyenne du diplôme » qui réunit 49% de la population ayant atteint un niveau d'études compris entre le brevet des collèges et le bac.");
@@ -50,26 +44,36 @@ define([], function() {
 		}
 
 		// CSP
-		switch ($rootScope.results[3]) {
+		switch ($rootScope.results[2]) {
 			case 'A':
+				jQuery('.csp .result-answer span').html("Peut-<br />être").addClass('maybe');
+				jQuery('.csp .media-block .media-block').html("On estime qu’environ 20% des ouvriers (les plus qualifiés) pourraient être rangés dans les classes moyennes.");
+				csp = -1;
+				break;
 			case 'B':
 				jQuery('.csp .result-answer span').html("Peut-<br />être").addClass('maybe');
-				jQuery('.csp .media-block .media-block').html("On estime qu’environ 20% des ouvriers et employés (les plus qualifiés) pourraient être rangés dans les classes moyennes.");
+				jQuery('.csp .media-block .media-block').html("On estime qu’environ 20% des employés (les plus qualifiés) pourraient être rangés dans les classes moyennes.");
+				csp = -1;
 				break;
 			case 'C':
-			case 'E':
 				jQuery('.csp .result-answer span').html("Peut-<br />être").addClass('maybe');
-				jQuery('.csp .media-block .media-block').html("On estime qu’environ 20% des cadres supérieurs et 50 % des chefs d’entreprise et agriculteurs pourraient être rangés dans les classes moyennes.");
+				jQuery('.csp .media-block .media-block').html("On estime qu’environ 50 % des chefs d’entreprise, artisans et agriculteurs pourraient être rangés dans les classes moyennes.");
+				csp = -1;
 				break;
 			case 'D':
 				jQuery('.csp .result-answer span').html("Oui").parent().addClass('bullet-yes');
 				jQuery('.csp .media-block .media-block').html("Vous êtes au cœur des classes moyennes.");
 				csp = 1;
 				break;
+			case 'E':
+				jQuery('.csp .result-answer span').html("Peut-<br />être").addClass('maybe');
+				jQuery('.csp .media-block .media-block').html("On estime qu’environ 20 % des cadres et professions intellectuelles supérieurs pourraient être rangés dans les classes moyennes. moyennes.");
+				csp = 1;
+				break;
 		}
 
 		// Earnings
-		switch ($rootScope.results[4]) {
+		switch ($rootScope.results[3]) {
 			case 'A':
 			case 'B':
 				jQuery('.earnings .result-answer span').html("Non").parent().addClass('bullet-no');
@@ -89,7 +93,7 @@ define([], function() {
 		}
 
 		// Estate
-		switch ($rootScope.results[5]) {
+		switch ($rootScope.results[4]) {
 			case 'A':
 				jQuery('.estate .result-answer span').html("Non").parent().addClass('bullet-no');
 				jQuery('.estate .media-block .media-block').html("Vous faites partie des 30% des ménages les moins riches, dont le patrimoine est inférieur à celui des classes moyennes.");
@@ -115,7 +119,7 @@ define([], function() {
 		if (total > 2) {
 			cm = true;
 		} else {
-			if ((studies == 1 && earnings == 1) || (csp == 1 && estate == 1)) {
+			if ((earnings === 1 && estate === 1) || (csp === 1 && earnings === 1) || (studies === 1 && earnings === 1) || (csp === 1 && estate === 1)) {
 				cm = true;
 			} else {
 				cm = false;

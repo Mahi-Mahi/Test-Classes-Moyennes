@@ -6,7 +6,7 @@
 				"idx": "A",
 				"text": "célibataire sans enfant",
 				"questions": {
-					"4": {
+					"3": {
 						"answers": [{
 							"idx": "A",
 							"text": "moins de 814 euros"
@@ -26,7 +26,7 @@
 				"idx": "B",
 				"text": "célibataire avec enfant(s)",
 				"questions": {
-					"4": {
+					"3": {
 						"answers": [{
 							"idx": "A",
 							"text": "moins de 1114 euros"
@@ -46,7 +46,7 @@
 				"idx": "C",
 				"text": "en couple sans enfants",
 				"questions": {
-					"4": {
+					"3": {
 						"answers": [{
 							"idx": "A",
 							"text": "moins de 1612 euros"
@@ -66,7 +66,7 @@
 				"idx": "D",
 				"text": "en couple avec un enfant",
 				"questions": {
-					"4": {
+					"3": {
 						"answers": [{
 							"idx": "A",
 							"text": "moins de 1876 euros"
@@ -86,7 +86,7 @@
 				"idx": "E",
 				"text": "en couple avec deux enfants",
 				"questions": {
-					"4": {
+					"3": {
 						"answers": [{
 							"idx": "A",
 							"text": "moins de 2189 euros"
@@ -106,7 +106,7 @@
 				"idx": "F",
 				"text": "en couple avec trois enfants ou plus",
 				"questions": {
-					"4": {
+					"3": {
 						"answers": [{
 							"idx": "A",
 							"text": "moins de 2181 euros"
@@ -122,28 +122,6 @@
 						}]
 					}
 				}
-			}]
-		}, {
-			"prefix": "Vous avez ",
-			"text": "Votre âge",
-			"answers": [{
-				"idx": "A",
-				"text": "de 20 à 24 ans"
-			}, {
-				"idx": "B",
-				"text": "de 25 à 29 ans"
-			}, {
-				"idx": "C",
-				"text": "de 30 à 39 ans"
-			}, {
-				"idx": "D",
-				"text": "de 40 à 49 ans"
-			}, {
-				"idx": "E",
-				"text": "de 50 à 59 ans"
-			}, {
-				"idx": "F",
-				"text": "60 ans ou plus"
 			}]
 		}, {
 			"prefix": "Vous...",
@@ -184,7 +162,7 @@
 				"text": "profession intermédiaire (technicien, agent de maîtrise...)"
 			}, {
 				"idx": "E",
-				"text": "cadre supérieur"
+				"text": "cadre et profession intellectuelle supérieurs"
 			}]
 		}, {
 			"prefix": "Le revenu mensuel de votre ménage s’élève à",
