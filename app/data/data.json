@@ -134,12 +134,15 @@
 				"text": "de 25 à 29 ans"
 			}, {
 				"idx": "C",
-				"text": "de 40 à 49 ans"
+				"text": "de 30 à 39 ans"
 			}, {
 				"idx": "D",
+				"text": "de 40 à 49 ans"
+			}, {
+				"idx": "E",
 				"text": "de 50 à 59 ans"
 			}, {
-				"idx": "A",
+				"idx": "F",
 				"text": "60 ans ou plus"
 			}]
 		}, {

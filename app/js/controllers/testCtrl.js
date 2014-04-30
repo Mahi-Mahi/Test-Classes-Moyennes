@@ -19,8 +19,6 @@ define([], function() {
 				return;
 			}
 
-			console.log("showNextQuestionBtn");
-
 			if (debug) {
 				$scope.nextQuestion();
 			} else {
@@ -36,19 +34,17 @@ define([], function() {
 			var index = jQuery('.content__form input:checked').val().charCodeAt(0) - "A".charCodeAt(0);
 			var res = jQuery('.content__form input:checked').val();
 
-			console.log([index, res]);
+			// console.log([index, res]);
 
-			$scope.answers[$scope.question_idx] = res;
+			$scope.results[$scope.question_idx] = res;
+
+			console.log($scope.results);
 
 			angular.forEach($scope.questions[$scope.question_idx].answers[index].questions, function(value, key) {
 				$scope.questions[key].answers = value.answers;
 			});
 
-			angular.forEach($scope.questions[$scope.question_idx].answers[index].score, function(value, key) {
-				$rootScope.results[key] += value ? 1 : 0;
-			});
-
-			ga('send', 'event', 'question', 'click', $scope.question_idx, index);
+			// ga('send', 'event', 'question', 'click', $scope.question_idx, index);
 
 			$scope.question_idx++;
 
@@ -65,7 +61,7 @@ define([], function() {
 			if ($scope.question_idx < $scope.questions.length) {
 
 				$scope.question = $scope.questions[$scope.question_idx];
-				console.log($scope.question);
+				// console.log($scope.question);
 
 			} else {
 				$location.path("/app/resultats");
@@ -86,7 +82,7 @@ define([], function() {
 
 			$scope.question_idx = 0;
 
-			console.log($scope.questions.length + " questions");
+			// console.log($scope.questions.length + " questions");
 
 			showQuestion();
 

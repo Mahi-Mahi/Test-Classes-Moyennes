@@ -45,4 +45,10 @@ require([
 	angular.element().ready(function() {
 		angular.resumeBootstrap([app['name']]);
 	});
+
+	jQuery('.methodo, .bt-go--ok').find('a').on('click', function(event) {
+		jQuery('#methodo').slideToggle('normal');
+		event.preventDefault();
+	});
+
 });

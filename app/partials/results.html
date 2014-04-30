@@ -1,44 +1,75 @@
-<div class="wrapper gradient wrapper-result {{slug.join(' ')}}">
-		<div class="share-container clearfix">
-			<!-- buttons start here -->
-			<ul class="rrssb-buttons clearfix">
-				<li class="facebook">
-					<a href="https://www.facebook.com/sharer/sharer.php?u=http%3A%2F%2Fwww.leparisienmagazine.fr%2Ftest-municipales-paris-2014-app%2F&t=Municipales%20%C3%A0%20Paris%20%3A%20voterez-vous%20NKM%20ou%20Anne%20Hidalgo%20%3F%20En%2020%20questions%2C%20d%C3%A9couvrez%20quel%20programme%20vous%20convient%20le%20mieux%20gr%C3%A2ce%20au%20test%20du%20Parisien%20Magazine%20!http%3A%2F%2Fwww.leparisienmagazine.fr%2Ftest-municipales-paris-2014-app%2F" class="popup" target="_blank">
-						<span class="icon">
-							<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" x="0px" y="0px" width="30px" height="30px" viewBox="0 0 100 100" xml:space="preserve" class="style0"><path d="M99.5,17.001C99.5,8.31,91.689,0.5,83,0.5H17C8.327,0.5,0.5,8.31,0.5,17.001v65.998C0.5,91.689,8.31,99.5,17,99.5h33V62.1 H37.9V45.6H50v-6.428C50,28.11,58.359,18.1,68.59,18.1H81.9v16.5H68.562c-1.46,0-3.162,1.761-3.162,4.427V45.6h16.5v16.5H65.4v37.4 H83c8.672,0,16.5-7.83,16.5-16.501V17.001z"/></svg>
-						</span>
-						<span class="text">Facebook</span>
-					</a>
-				</li>
-				<li class="twitter">
-					<a href="http://twitter.com/home?status=%23MunicipalesParis%20%3A%20%23NKM%20ou%20Anne%20%23Hidalgo%20%3F%20D%C3%A9couvrez%20quel%20programme%20vous%20convient%20le%20mieux%20!%20via%20%40leparisienmag%20http%3A%2F%2Fwww.leparisienmagazine.fr%2Ftest-municipales-paris-2014-app%2F" class="popup" target="_blank">
-						<span class="icon">
-							<svg xmlns="http://www.w3.org/2000/svg" viewBox="328 355 335 276" preserveAspectRatio="xMidYMid meet"><path d=" M 630  425 A 195  195 0 0 1 331  600 A 142  142 0 0 0 428  570 A 70  70 0 0 1 370  523 A 70  70 0 0 0 401  521 A 70  70 0 0 1 344  455 A 70  70 0 0 0 372  460 A 70  70 0 0 1 354  370 A 195  195 0 0 0 495  442 A 67  67 0 0 1 611  380 A 117  117 0 0 0 654  363 A 65  65 0 0 1 623  401 A 117  117 0 0 0 662  390 A 65  65 0 0 1 630  425 Z"/></svg>
-						</span>
-						<span class="text">Twitter</span>
-					</a>
-				</li>
-			</ul>
-			<!-- buttons end here -->
+<div class="wrapper results">
+	<header class="header clearfix">
+		<div class="left">
+			<img src="/app/images/logo-le-parisien-magazine.png" alt="Le Parisien Magazine" />
+		</div><!-- .left -->
+		<div class="result-status left">
+			<div class="tagline">
+
+			</div>
 		</div>
-	<div class="main" role="main">
-		<div class="main__result">
-			<div class="main__result__header">
-				<img ng-repeat="key in slug" src="/app/images/head-{{key}}.png" alt="{{name}}">
-			</div><!-- .main__result__header -->
-			<div class="main__result__body">
-				<p ng-bind-html="result_title"></p>
-			</div><!-- .main__result__body -->
-			<div class="main__result__footer">
-				<ul class="unstyled">
-					<li class="bt-item"><a href="/app/reponses">Les réponses</a></li>
-					<li class="bt-item"><a href="/app/quiz">Rejouer</a></li>
-				</ul>
-				<p>
-					<a href="http://www.leparisienmagazine.fr" target="_blank"><img src="/app/images/logo-le-parisien-magazine.png" alt="Le parisien magazine" /></a>
-				</p>
-			</div><!-- .main__result__footer -->
-		</div><!-- .main__result -->
+		<ul class="unstyled footer-social__list right">
+			<li class="footer-social__item"><a href="#" class="icon-facebook">Partager sur facebook</a></li>
+			<li class="footer-social__item"><a href="#" class="icon-twitter">Twitter</a></li>
+			<li class="footer-social__item"><a href="#" class="icon-email">Partager via Email</a></li>
+		</ul>
+	</header>
+	<div class="main">
+		<div class="grid">
+			<div class="col studies">
+				<h2><span>Niveau d'études</span></h2>
+				<div class="media-block">
+					<div class="result-answer left">
+						<p><span class=""></span></p>
+					</div>
+					<div class="media-block">
+
+					</div><!-- .media-block -->
+				</div><!-- .media-block -->
+			</div><!-- .col -->
+			<div class="col csp">
+				<h2><span>Catégorie <br />socio-professionnelle</span></h2>
+				<div class="media-block">
+					<div class="result-answer left">
+						<p><span class=""></span></p>
+					</div>
+					<div class="media-block">
+
+					</div><!-- .media-block -->
+				</div><!-- .media-block -->
+			</div><!-- .col -->
+			<div class="col earnings">
+				<h2><span>Revenus</span></h2>
+				<div class="media-block">
+					<div class="result-answer left">
+						<p><span class=""></span></p>
+					</div>
+					<div class="media-block">
+
+					</div><!-- .media-block -->
+				</div><!-- .media-block -->
+			</div><!-- .col -->
+			<div class="col estate">
+				<h2><span>Patrimoine</span></h2>
+				<div class="media-block">
+					<div class="result-answer left">
+						<p><span class=""></span></p>
+					</div>
+					<div class="media-block">
+
+					</div><!-- .media-block -->
+				</div><!-- .media-block -->
+			</div><!-- .col -->
+		</div><!-- .grid -->
+		<div class="bt-go bt-go--replay">
+			<a href="/app/test"><span>Rejouer</span></a>
+		</div><!-- .bt-go -->
 	</div><!-- .main -->
+	<footer class="footer clearfix">
+		<div class="left methodo">
+			<a href="#">Méthodologie</a>
+		</div>
+	</footer><!-- .footer -->
 </div><!-- .wrapper -->
+
 <div id="methodo" ng-include="'/app/partials/methodo.html'"></div><!-- #methodo -->
