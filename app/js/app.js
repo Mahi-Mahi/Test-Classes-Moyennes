@@ -6,7 +6,8 @@ define([
 	'controllers',
 	'angularRoute',
 	'angularResource',
-	'angularSanitize'
+	'angularSanitize',
+	'jquery'
 	// 'angularAnimate',
 ], function(angular, filters, services, directives, controllers) {
 	'use strict';

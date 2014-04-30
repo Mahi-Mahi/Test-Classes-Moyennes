@@ -74,32 +74,9 @@ gulp.task('setup', ['clean', 'bower', 'default']);
 
 // watch
 gulp.task('watch', function() {
-    gulp.watch('data/import.rb', function() {
-        var child = spawn("data/import.rb", [], {
-            cwd: process.cwd()
-        }),
-            stdout = '',
-            stderr = '';
-
-        child.stdout.setEncoding('utf8');
-        child.stdout.on('data', function(data) {
-            stdout += data;
-            gutil.log(data);
-        });
-        child.stderr.setEncoding('utf8');
-        child.stderr.on('data', function(data) {
-            stderr += data;
-            gutil.log(gutil.colors.red(data));
-            gutil.beep();
-        });
-        child.on('close', function(code) {
-            gutil.log("Done with exit code", code);
-        });
-        gulp.run('data');
-    });
-    gulp.watch('app/scss/*.scss', function() {
-        gulp.run('sass');
-    });
+    // gulp.watch('app/scss/*.scss', function() {
+    //     gulp.run('sass');
+    // });
     gulp.watch('app/partials/*.html', function() {
         gulp.run('html');
     });

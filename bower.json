@@ -11,10 +11,12 @@
     "angular-route": "1.2.6",
     "requirejs": "latest",
     "requirejs-text": "latest",
+    "jquery": "~2.1.0",
+    "jquery-migrate": "~1.2.1",
+    "consolelog": "~2.0.1",
     "modernizr": "~2.7.2",
     "selectivizr": "~1.0.2",
-    "angular-animate": "1.2.6",
-    "RRSSB": "*"
+    "angular-animate": "1.2.6"
   },
   "devDependencies": {
     "angular-mocks": "1.2.6",

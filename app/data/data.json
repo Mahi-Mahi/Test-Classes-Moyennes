@@ -1,1 +1,211 @@
-{"questions":[{"theme":"Transports","text":"Faut-il ouvrir les couloirs de bus (jusqu’ici réservés aux bus, taxis et vélos) à tous les véhicules électriques ?","answers":[{"text":"Oui, cela encouragerait le développement des véhicules électriques.","score":{"nkm":false,"ah":true}},{"text":"Non, cela encombrerait les couloirs et ralentirait la circulation des bus et taxis.","score":{"nkm":true,"ah":false}}]},{"theme":"Transports","text":"La vitesse du périphérique a été abaissée à 70 km/h. Faut-il…","answers":[{"text":"L’abaisser encore plus en demandant le feu vert au préfet de police ?","score":{"nkm":false,"ah":false}},{"text":"La remettre à 80 km/h ?","score":{"nkm":true,"ah":false}},{"text":"La laisser à 70 km/h, ça suffit ?","score":{"nkm":false,"ah":true}}]},{"theme":"Transports","text":"Quelles solutions mettre en place pour favoriser l’usage des transports en commun ?","answers":[{"text":"Instaurer la gratuité pour les étudiants, les personnes handicapées et les personnes âgées.","score":{"nkm":true,"ah":false}},{"text":"Faire rouler le métro 24 heures sur 24 le week-end.","score":{"nkm":true,"ah":true}},{"text":"Fermer la boucle du tramway des Maréchaux.","score":{"nkm":false,"ah":true}}]},{"theme":"Sécurité","text":"Etes-vous favorable à la création d’une police municipale ?","answers":[{"text":"Oui.","score":{"nkm":true,"ah":false}},{"text":"Non.","score":{"nkm":false,"ah":true}}]},{"theme":"Sécurité","text":"Etes-vous favorable à la mise en place d’arrêtés interdisant la mendicité agressive ?","answers":[{"text":"Oui.","score":{"nkm":true,"ah":false}},{"text":"Non.","score":{"nkm":false,"ah":true}}]},{"theme":"Environnement","text":"Que feriez-vous pour verdir la capitale ?","answers":[{"text":"Je créerais 100 hectares de toitures et murs végétalisés","score":{"nkm":false,"ah":true}},{"text":"J’aménagerais un nouveau parc dans le futur quartier Bercy-Charenton (12e).","score":{"nkm":true,"ah":true}},{"text":"Je créerais un immense Central Park comme à New York, en bord de Seine.","score":{"nkm":false,"ah":false}},{"text":"Je piétonniserais et végétaliserais des portions de rue et des placettes.","score":{"nkm":true,"ah":true}},{"text":"Je rouvrirais les 190 parcs et squares aujourd’hui inaccessibles.","score":{"nkm":true,"ah":false}}]},{"theme":"Petite enfance","text":"Pour mieux aider les parents à faire garder leurs jeunes enfants, il faudrait…","answers":[{"text":"Créer 10 000 solutions de garde supplémentaires (crèches, assistantes maternelles, crèches d’entreprise).","score":{"nkm":true,"ah":false}},{"text":"Ouvrir 5 000 nouvelles places de crèches.","score":{"nkm":false,"ah":true}},{"text":"Elargir les horaires d’ouverture des crèches.","score":{"nkm":true,"ah":true}},{"text":"Ouvrir dans chaque arrondissement une crèche associative fermant à 22 heures.","score":{"nkm":true,"ah":false}},{"text":"Tester une crèche pilote ouverte 24 heures sur 24.","score":{"nkm":false,"ah":true}}]},{"theme":"Petite enfance","text":"La réforme des rythmes scolaires a été lancée à la rentrée 2013. Pour la rentrée 2014 vous proposez…","answers":[{"text":"De poursuivre les efforts pour que tous les enfants aient accès aux ateliers gratuits après la classe.","score":{"nkm":false,"ah":true}},{"text":"De la remettre à plat pour instaurer plus de contrôles sur les animateurs et le contenu pédagogique des ateliers.","score":{"nkm":true,"ah":false}}]},{"theme":"Dynamisme économique","text":"Souhaitez-vous que des commerces puissent ouvrir le dimanche ? Si oui, où ?","answers":[{"text":"Oui, dans les quatre arrondissements du centre de Paris.","score":{"nkm":false,"ah":false}},{"text":"Je pense qu’il faut réexaminer la carte des sept zones touristiques (Montmartre, Champs-Elysées…) où les commerces ont le droit d’ouvrir le dimanche, en concertation avec les riverains et les salariés.","score":{"nkm":false,"ah":true}},{"text":"Oui, dans tous les quartiers où les commerçants en feront la demande.","score":{"nkm":true,"ah":false}},{"text":"Non.","score":{"nkm":false,"ah":false}}]},{"theme":"Logement","text":"Pour permettre aux Parisiens de mieux se loger, vous souhaiteriez :","answers":[{"text":"Créer 10 000 logements par an dans Paris","score":{"nkm":true,"ah":true}},{"text":"Vendre aux Parisiens 20 % des nouveaux logements créés à un tarif inférieur de 25 % aux prix du marché.","score":{"nkm":true,"ah":false}},{"text":"Transformer 200 000 m² de bureaux en logements.","score":{"nkm":false,"ah":true}}]},{"theme":"Grands projets","text":"Votre projet pour la Petite Ceinture – la voie ferrée désaffectée qui fait le tour de Paris –, ce serait…","answers":[{"text":"En faire la première boucle cycliste intégrale autour de Paris.","score":{"nkm":true,"ah":false}},{"text":"Y installer des planches et des buvettes comme à Deauville, avec des aquariums et des spectacles vidéo dans les tunnels, des jardins associatifs… ","score":{"nkm":false,"ah":true}}]},{"theme":"Grands projets","text":"Etes-vous pour la construction de tours à Paris ?","answers":[{"text":"Oui, on peut construire des immeubles de plus de 50 mètres de haut mélangeant logements et bureaux.","score":{"nkm":false,"ah":true}},{"text":"Oui, à condition qu’elles ne soient pas isolées comme la tour Montparnasse ou la future tour Triangle à la porte de Versailles (15e). On peut imaginer des « grappes » de tours comme à La Défense.","score":{"nkm":true,"ah":false}}]},{"theme":"Culture et vie nocturne","text":"Quels événements aimeriez-vous lancer pour animer la capitale ?","answers":[{"text":"Le Grand Bazar du cinéma, une grande fête d’une semaine qui comprendra un festival, un marché du film, un salon professionnel, une foire…","score":{"nkm":true,"ah":false}},{"text":"Les « Folies d’hiver » sur les Grands Boulevards, un événement autour de toutes les musiques, réunissant les grandes institutions, les théâtres privés, mais aussi les commerces et les bars.","score":{"nkm":false,"ah":true}}]},{"theme":"Culture et vie nocturne","text":"Comment faciliter l’accès à la culture ?","answers":[{"text":"En étendant les horaires d’ouverture des bibliothèques.","score":{"nkm":true,"ah":true}},{"text":"En lançant la première « artothèque-phototèque », qui permettra aux Parisiens d’emprunter des œuvres d’art contemporain.","score":{"nkm":false,"ah":true}},{"text":"En créant une carte « musées illimitées » offrant d’accéder à tous les musées parisiens en échange d’un forfait mensuel.","score":{"nkm":true,"ah":false}}]},{"theme":"Culture et vie nocturne","text":"On dit que Paris s’ennuie la nuit. Comment faire pour réveiller la vie nocturne dans la capitale ?","answers":[{"text":"En identifiant des quartiers de fête et en créant un poste d’adjoint à la vie nocturne.","score":{"nkm":false,"ah":true}},{"text":"En utilisant les stations de métro fermées au public et en investissant les tunnels Baron-Leroy, à Bercy (12e), pour en faire un espace dédié aux musiques actuelles.","score":{"nkm":true,"ah":false}}]},{"theme":"Divers","text":"Le slogan qui vous plaît pour Paris :","answers":[{"text":"« Le Paris qui ose. »","score":{"nkm":false,"ah":true}},{"text":"« Une nouvelle énergie pour les Parisiens. »","score":{"nkm":true,"ah":false}},{"text":"« A Paris, place au peuple. »","score":{"nkm":false,"ah":false}},{"text":"« Paris bleu Marine. »","score":{"nkm":false,"ah":false}},{"text":"« Vivre mieux à Paris. »","score":{"nkm":false,"ah":false}}]},{"theme":"Divers","text":"Le métro évoque pour vous…","answers":[{"text":"« Un lieu de charme à la fois anonyme et familier » où l’on peut vivre de « véritables moments de grâce ».","score":{"nkm":true,"ah":false}},{"text":"Le bruit qui représente le mieux Paris. « J’aime bien le bruit du métro. »","score":{"nkm":false,"ah":true}}]},{"theme":"Divers","text":"Quelle est votre chanson sur Paris favorite ?","answers":[{"text":"Paris, le Flore, d’Etienne Daho.","score":{"nkm":false,"ah":false}},{"text":"Paname, de Léo Ferré.","score":{"nkm":true,"ah":false}},{"text":"Il est cinq heures, Paris s’éveille, de Jacques Dutronc.","score":{"nkm":false,"ah":false}},{"text":"Paris, de Marc Lavoine.","score":{"nkm":false,"ah":true}},{"text":"J’aime plus Paris, de Thomas Dutronc.","score":{"nkm":false,"ah":false}}]},{"theme":"Divers","text":"Quel est votre film préféré sur Paris ?","answers":[{"text":"Paris brûle-t-il ?, de René Clément (1966).","score":{"nkm":false,"ah":true}},{"text":"La Traversée de Paris, de Claude Autant-Lara (1956).","score":{"nkm":true,"ah":false}},{"text":"Le Fabuleux Destin d’Amélie Poulain, de Jean-Pierre Jeunet (2001).","score":{"nkm":true,"ah":false}},{"text":"Paris, de Cédric Klapisch (2008).","score":{"nkm":false,"ah":true}}]},{"theme":"Divers","text":"Quel est votre monument parisien préféré ?","answers":[{"text":"La tour Eiffel.","score":{"nkm":false,"ah":true}},{"text":"Le pont des Arts ou le pont Neuf.","score":{"nkm":true,"ah":false}},{"text":"Notre-Dame.","score":{"nkm":false,"ah":false}},{"text":"La Cité de la mode et du design.","score":{"nkm":false,"ah":false}}]}]}
+{
+	"questions": [{
+			"prefix": "Vous êtes ",
+			"text": "Votre ménage",
+			"answers": [{
+				"idx": "A",
+				"text": "célibataire sans enfant",
+				"questions": {
+					"4": {
+						"answers": [{
+							"idx": "A",
+							"text": "moins de 814 euros"
+						}, {
+							"idx": "B",
+							"text": "De 814 à 1183 euros"
+						}, {
+							"idx": "C",
+							"text": "De 1183 à 2177 euros"
+						}, {
+							"idx": "D",
+							"text": "Plus de 2177 euros"
+						}]
+					}
+				}
+			}, {
+				"idx": "B",
+				"text": "célibataire avec enfant(s)",
+				"questions": {
+					"4": {
+						"answers": [{
+							"idx": "A",
+							"text": "moins de 1114 euros"
+						}, {
+							"idx": "B",
+							"text": "De 1114 à 1589 euros"
+						}, {
+							"idx": "C",
+							"text": "De 1589 à 2987 euros"
+						}, {
+							"idx": "D",
+							"text": "Plus de 2987 euros"
+						}]
+					}
+				}
+			}, {
+				"idx": "C",
+				"text": "en couple sans enfants",
+				"questions": {
+					"4": {
+						"answers": [{
+							"idx": "A",
+							"text": "moins de 1612 euros"
+						}, {
+							"idx": "B",
+							"text": "De 1612 à 2251 euros"
+						}, {
+							"idx": "C",
+							"text": "De 2251 à 4280 euros"
+						}, {
+							"idx": "D",
+							"text": "Plus de 4280 euros"
+						}]
+					}
+				}
+			}, {
+				"idx": "D",
+				"text": "en couple avec un enfant",
+				"questions": {
+					"4": {
+						"answers": [{
+							"idx": "A",
+							"text": "moins de 1876 euros"
+						}, {
+							"idx": "B",
+							"text": "De 1876 à 2773 euros"
+						}, {
+							"idx": "C",
+							"text": "De 2773 à 4890 euros"
+						}, {
+							"idx": "D",
+							"text": "Plus de 4890 euros"
+						}]
+					}
+				}
+			}, {
+				"idx": "E",
+				"text": "en couple avec deux enfants",
+				"questions": {
+					"4": {
+						"answers": [{
+							"idx": "A",
+							"text": "moins de 2189 euros"
+						}, {
+							"idx": "B",
+							"text": "De 2189 à 3122 euros"
+						}, {
+							"idx": "C",
+							"text": "De 3122 à 5567 euros"
+						}, {
+							"idx": "D",
+							"text": "Plus de 5567 euros"
+						}]
+					}
+				}
+			}, {
+				"idx": "F",
+				"text": "en couple avec trois enfants ou plus",
+				"questions": {
+					"4": {
+						"answers": [{
+							"idx": "A",
+							"text": "moins de 2181 euros"
+						}, {
+							"idx": "B",
+							"text": "De 2181 à 3001 euros"
+						}, {
+							"idx": "C",
+							"text": "De 3001 à 5621 euros"
+						}, {
+							"idx": "D",
+							"text": "Plus de 5621 euros"
+						}]
+					}
+				}
+			}]
+		}, {
+			"prefix": "Vous avez ",
+			"text": "Votre âge",
+			"answers": [{
+				"idx": "A",
+				"text": "de 20 à 24 ans"
+			}, {
+				"idx": "B",
+				"text": "de 25 à 29 ans"
+			}, {
+				"idx": "C",
+				"text": "de 40 à 49 ans"
+			}, {
+				"idx": "D",
+				"text": "de 50 à 59 ans"
+			}, {
+				"idx": "A",
+				"text": "60 ans ou plus"
+			}]
+		}, {
+			"prefix": "Vous...",
+			"text": "Votre niveau d’études",
+			"answers": [{
+				"idx": "A",
+				"text": "n’avez aucun diplôme ou un certificat d’études"
+			}, {
+				"idx": "B",
+				"text": "avez juste le brevet des collèges"
+			}, {
+				"idx": "C",
+				"text": "avez un CAP ou un BEP"
+			}, {
+				"idx": "D",
+				"text": "avez le bac ou le brevet professionnel"
+			}, {
+				"idx": "E",
+				"text": "avez un diplôme Bac + 2"
+			}, {
+				"idx": "F",
+				"text": "avez un diplôme supérieur à Bac + 2"
+			}]
+		}, {
+			"prefix": "Vous êtes actuellement ou avez été, avant votre retraite ",
+			"text": "Votre catégorie socio-professionnelle",
+			"answers": [{
+				"idx": "A",
+				"text": "ouvrier"
+			}, {
+				"idx": "B",
+				"text": "employé"
+			}, {
+				"idx": "C",
+				"text": "agriculteur, artisan, chef d’entreprise"
+			}, {
+				"idx": "D",
+				"text": "profession intermédiaire (technicien, agent de maîtrise...)"
+			}, {
+				"idx": "E",
+				"text": "cadre supérieur"
+			}]
+		}, {
+			"prefix": "Le revenu mensuel de votre ménage s’élève à",
+			"text": "Vos revenus",
+			"description": "Additionnez votre salaire net et, le cas échéant, celui de votre conjoint, les allocations et prestations sociales dont vous bénéficiez et vos revenus du capital (ramenés au mois). <br />Retirez de cette somme le montant de vos impôts (impôt sur le revenu et taxes locales, ramenés au mois).",
+			"answers": []
+		}, {
+			"prefix": "Votre patrimoine s’élève à ",
+			"text": "Votre patrimoine",
+			"description": "Additionnez la valeur de tous vos biens : logements, terrains, comptes et livrets bancaires, actions en bourse... et retirez le montant de vos dettes (prêts immobiliers, crédits à la consommation).",
+			"answers": [{
+				"idx": "A",
+				"text": "moins de 7 661 euros"
+			}, {
+				"idx": "B",
+				"text": "de 7661 à 211 167 euros"
+			}, {
+				"idx": "C",
+				"text": "de 211 167 à 384 091 euros"
+			}, {
+				"idx": "D",
+				"text": "plus de 384 091 euros"
+			}]
+		}
+
+	]
+}

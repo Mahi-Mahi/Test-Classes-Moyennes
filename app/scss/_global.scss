@@ -4,10 +4,10 @@
 /* GLOBAL */
 
 // FONT-FACE
-@include font-face('Landmark Inline', '/fonts/Landmark-Inline', $weight: normal, $style: normal );
-@include font-face('Landmark', '/fonts/Landmark-Regular', $weight: normal, $style: normal );
-@include font-face('Graphik Light', '/fonts/Graphik-Light', $weight: normal, $style: normal );
-@include font-face('Graphik Medium', '/fonts/Graphik-Medium', $weight: normal, $style: normal );
+@include font-face('Landmark Inline', '/app/fonts/Landmark-Inline', $weight: normal, $style: normal );
+@include font-face('Landmark', '/app/fonts/Landmark-Regular', $weight: normal, $style: normal );
+@include font-face('Graphik Light', '/app/fonts/Graphik-Light', $weight: normal, $style: normal );
+@include font-face('Graphik Medium', '/app/fonts/Graphik-Medium', $weight: normal, $style: normal );
 
 // STRUCTURE
 html { font-size: 100%; -webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%; }
@@ -258,7 +258,7 @@ textarea { overflow: auto; vertical-align: top; resize: vertical; }
 	}
 	span {
 		height: 88px;
-		width: 88px;		
+		width: 88px;
 	}
 }
 
@@ -274,7 +274,7 @@ textarea { overflow: auto; vertical-align: top; resize: vertical; }
 	}
 	span {
 		height: 47px;
-		width: 47px;		
+		width: 47px;
 	}
 }
 
@@ -339,7 +339,7 @@ textarea { overflow: auto; vertical-align: top; resize: vertical; }
 		display: block;
 		margin: 0;
 		padding: 0;
-	}	
+	}
 }
 
 .step-item {
@@ -355,15 +355,26 @@ textarea { overflow: auto; vertical-align: top; resize: vertical; }
 	width: 28px;
 }
 
-.current-step {
-	background:$highlight-color;
-	color:#fff;
-	font-family:'Graphik Medium', Arial, Verdana, sans-serif;
+
+
+
+@for $i from 1 through 6 {
+	@for $j from 1 through $i - 1 {
+		.question-#{$i} .step-#{$j} {
+			// .step-done
+			color:$highlight-color;
+			font-family:'Graphik Medium', Arial, Verdana, sans-serif;
+		}
+	}
 }
 
-.step-done {
-	color:$highlight-color;
-	font-family:'Graphik Medium', Arial, Verdana, sans-serif;
+@for $i from 1 through 6 {
+	.question-#{$i} .step-#{$i} {
+		// .current-step {
+		background:$highlight-color;
+		color:#fff;
+		font-family:'Graphik Medium', Arial, Verdana, sans-serif;
+	}
 }
 
 // CONTENT
@@ -478,6 +489,7 @@ textarea { overflow: auto; vertical-align: top; resize: vertical; }
 
 .bt-next {
 	display: block;
+	opacity: 0;
 	margin: 0;
 	padding: 25px 0;
 	text-align: right;
@@ -509,6 +521,7 @@ textarea { overflow: auto; vertical-align: top; resize: vertical; }
 }
 
 .bt-next--final {
+	display: none;
 	button {
 		color:#000;
 		&:after {
@@ -564,7 +577,7 @@ textarea { overflow: auto; vertical-align: top; resize: vertical; }
 			margin: 0;
 			padding: 0;
 			text-transform: uppercase;
-			vertical-align: bottom;	
+			vertical-align: bottom;
 		}
 	}
 }
@@ -601,7 +614,7 @@ textarea { overflow: auto; vertical-align: top; resize: vertical; }
 	.maybe {
 		font-size: 11px;
 		top:7px;
-		left:1px;		
+		left:1px;
 	}
 }
 

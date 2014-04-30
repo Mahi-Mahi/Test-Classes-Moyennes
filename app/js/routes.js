@@ -14,13 +14,9 @@ define(['angular', 'app'], function(angular, app) {
 				templateUrl: '/app/partials/home.html',
 				controller: 'homeCtrl'
 			});
-			$routeProvider.when('/app/quizz', {
-				templateUrl: '/app/partials/quizz.html',
-				controller: 'quizzCtrl'
-			});
-			$routeProvider.when('/app/reponses', {
-				templateUrl: '/app/partials/quizz.html',
-				controller: 'quizzCtrl'
+			$routeProvider.when('/app/test', {
+				templateUrl: '/app/partials/test.html',
+				controller: 'testCtrl'
 			});
 			$routeProvider.when('/app/resultats', {
 				templateUrl: '/app/partials/results.html',
