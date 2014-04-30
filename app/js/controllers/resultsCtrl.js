@@ -132,6 +132,7 @@ define([], function() {
 
 			jQuery('.icon-facebook').attr('href', "https://www.facebook.com/sharer/sharer.php?u=" + document.location.href + "&t=" + encodeURIComponent("Selon le test du Parisien Magazine, je fais partie des classes moyennes. Et vous ? " + configService.share_url));
 			jQuery('.icon-twitter').attr('href', "http://twitter.com/home?status=" + encodeURIComponent("Selon le test de @LeParisienMag, je fais partie des classes moyennes. Et vous? " + configService.share_url));
+			jQuery('.icon-email').attr('href', "mailto:?subject=" + encodeURIComponent(configService.share_email_subject) + "&body=" + encodeURIComponent("Selon le test de @LeParisienMag, je fais partie des classes moyennes. Et vous?" + configService.share_url));
 
 			ga('send', 'event', 'result', 'ClassesMoyennes');
 		} else {
@@ -139,6 +140,7 @@ define([], function() {
 
 			jQuery('.icon-facebook').attr('href', "https://www.facebook.com/sharer/sharer.php?u=" + document.location.href + "&t=" + encodeURIComponent("Selon le test du Parisien Magazine, je ne fais pas partie des classes moyennes. Et vous ? " + configService.share_url));
 			jQuery('.icon-twitter').attr('href', "http://twitter.com/home?status=" + encodeURIComponent("Selon le test de @LeParisienMag, je ne fais pas partie des classes moyennes. Et vous? " + configService.share_url));
+			jQuery('.icon-email').attr('href', "mailto:?subject=" + encodeURIComponent(configService.share_email_subject) + "&body=" + encodeURIComponent("Selon le test de @LeParisienMag, je ne fais pas partie des classes moyennes. Et vous?" + configService.share_url));
 
 			ga('send', 'event', 'result', 'Pas-ClassesMoyennes');
 		}

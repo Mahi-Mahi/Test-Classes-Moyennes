@@ -38,6 +38,9 @@ var share_status = "Test : faites-vous partie des classes moyennes ? via @lepari
 gulp.task('html', function() {
     gulp.src(['app/partials/index.html'])
         .pipe(replace("[home-tmpl]", fs.readFileSync('app/partials/home.html', 'utf8')))
+        .pipe(replace("SHARE_URL", encodeURIComponent(share_url)))
+        .pipe(replace("SHARE_TEXT", encodeURIComponent(share_text)))
+        .pipe(replace("SHARE_STATUS", encodeURIComponent(share_status)))
         .pipe(gulp.dest('app/'));
 });
 
