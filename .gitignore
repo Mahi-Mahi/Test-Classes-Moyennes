@@ -1,3 +1,5 @@
 
 *.scssc
 app/js/min
+app/js/**/min
+**/*-ck.js

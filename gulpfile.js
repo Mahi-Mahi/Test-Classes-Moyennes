@@ -31,8 +31,8 @@ gulp.task('sass', function() {
 
 var base_url = 'test-classes-moyennes-app';
 var share_url = 'http://www.leparisienmagazine.fr/test-classes-moyennes-111176/';
-var share_text = "Municipales à Paris : voterez-vous NKM ou Anne Hidalgo ? En 20 questions, découvrez quel programme vous convient le mieux grâce au test du Parisien Magazine !" + share_url;
-var share_status = "#MunicipalesParis : #NKM ou Anne #Hidalgo ? Découvrez quel programme vous convient le mieux ! via @leparisienmag " + share_url;
+var share_text = "Faites-vous partie des classes moyennes ? Découvrez la réponse grâce au test du Parisien Magazine !" + share_url;
+var share_status = "Test : faites-vous partie des classes moyennes ? via @leparisienmag " + share_url;
 
 // html
 gulp.task('html', function() {
