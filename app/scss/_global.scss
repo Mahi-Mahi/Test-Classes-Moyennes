@@ -333,12 +333,15 @@ text-decoration: none;
 	border:1px solid #C7B299;
 	border-radius:0 8px 8px 0;
 	display: block;
-	font:normal 19px 'Landmark', Arial, Verdana, sans-serif;
+	font:normal 17px 'Landmark', Arial, Verdana, sans-serif;
 	margin: 0;
 	padding: 15px 0;
 	text-align: center;
 	text-transform: uppercase;
 	width: 103px;
+	ul {
+		font:normal 19px 'Landmark', Arial, Verdana, sans-serif;
+	}
 	p {
 		display: block;
 		margin: 0;
