@@ -281,7 +281,7 @@ textarea {
     margin: 0;
     padding: 0; }
   .tagline span {
-    background: #f6f5f3;
+    background: #f5f4f2;
     display: inline-block;
     font: normal 42px 'Landmark Inline', Arial, Verdana, sans-serif;
     position: absolute;
@@ -302,19 +302,14 @@ textarea {
     .home .tagline em, .results .tagline em, #methodo .tagline em {
       display: inline; }
     .home .tagline span, .results .tagline span, #methodo .tagline span {
-      background: #f3f2ee; }
+      background: #f4f3f1; }
   #methodo .tagline {
     margin: -2px 0 0 0; }
     #methodo .tagline span {
       background: #fdfdfd; }
   .results .tagline {
     margin: 0 0 0 55px; }
-  .tagline a {
-    text-decoration: none;
-  }
-  #methodo li ,  #methodo p {
-    font-size:12px;
-  }
+
 .bt-go {
   padding: 60px 0 0 0; }
   .bt-go a {
@@ -389,6 +384,9 @@ textarea {
   .result-nok .tagline {
     margin: 0 0 0 30px; }
 
+.tagline a {
+  text-decoration: none; }
+
 .steps {
   display: table-cell;
   margin: 0;
@@ -401,12 +399,14 @@ textarea {
   border: 1px solid #C7B299;
   border-radius: 0 8px 8px 0;
   display: block;
-  font: normal 19px 'Landmark', Arial, Verdana, sans-serif;
+  font: normal 17px 'Landmark', Arial, Verdana, sans-serif;
   margin: 0;
   padding: 15px 0;
   text-align: center;
   text-transform: uppercase;
   width: 103px; }
+  .steps-inner ul {
+    font: normal 19px 'Landmark', Arial, Verdana, sans-serif; }
   .steps-inner p {
     display: block;
     margin: 0;
@@ -643,10 +643,10 @@ textarea {
       top: 0;
       width: 43px; }
 
-  .bt-next--final button {
-    color: #000; }
-    .bt-next--final button:after {
-      background-color: #000; }
+.bt-next--final button {
+  color: #000; }
+  .bt-next--final button:after {
+    background-color: #000; }
 
 .results .main {
   overflow: hidden; }
@@ -721,12 +721,11 @@ textarea {
   font-size: 11px;
   top: 7px;
   left: 1px; }
-  .result-answer .bullet-no {
-    background:#ED1C24;
-  }
-  .result-answer .bullet-yes {
-    background:#69933E;
-  }
+.result-answer .bullet-no {
+  background: #ED1C24; }
+.result-answer .bullet-yes {
+  background: #69933E; }
+
 .footer {
   padding: 30px 0 12px 0; }
 
@@ -786,10 +785,8 @@ textarea {
   top: 0;
   font-size: 14px;
   z-index: 10;
-  height: 90%;
-  height:600px;
-  overflow:auto;
-}
+  height: 600px;
+  overflow: auto; }
   #methodo p {
     display: block;
     margin: 0;
@@ -809,6 +806,9 @@ textarea {
     margin: 0;
     padding: 40px 0 20px 0;
     text-transform: uppercase; }
+
+#methodo li, #methodo p {
+  font-size: 12px; }
 
 .methodo-inner {
   padding: 0 40px 20px 40px; }

@@ -2,7 +2,7 @@
 /* global angular */
 
 require.config({
-	urlArgs: "bust=" + 'CACHE_BUST',
+	urlArgs: "bust=" + Math.random(), //'CACHE_BUST',
 	paths: {
 		angular: '/app/vendor/angular/angular',
 		angularRoute: '/app/vendor/angular-route/angular-route',
