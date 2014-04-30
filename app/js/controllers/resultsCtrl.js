@@ -53,12 +53,12 @@ define([], function() {
 		switch ($rootScope.results[3]) {
 			case 'A':
 			case 'B':
-				jQuery('.csp .result-answer span').html("Peut-être").addClass('maybe');
+				jQuery('.csp .result-answer span').html("Peut-<br />être").addClass('maybe');
 				jQuery('.csp .media-block .media-block').html("On estime qu’environ 20% des ouvriers et employés (les plus qualifiés) pourraient être rangés dans les classes moyennes.");
 				break;
 			case 'C':
 			case 'E':
-				jQuery('.csp .result-answer span').html("Peut-être").addClass('maybe');
+				jQuery('.csp .result-answer span').html("Peut-<br />être").addClass('maybe');
 				jQuery('.csp .media-block .media-block').html("On estime qu’environ 20% des cadres supérieurs et 50 % des chefs d’entreprise et agriculteurs pourraient être rangés dans les classes moyennes.");
 				break;
 			case 'D':
