@@ -1,7 +1,7 @@
 <div class="wrapper question-{{question_idx+1}}">
 	<header class="header clearfix">
 		<div class="header__body left">
-			<img src="/test-classes-moyennes-app/images/logo-le-parisien-magazine.png" alt="Le Parisien Magazine" />
+			<a href="http://www.leparisienmagazine.fr" target="_top"><img src="/test-classes-moyennes-app/images/logo-le-parisien-magazine.png" alt="Le Parisien Magazine" /></a>
 			<div class="question-title">{{question_idx+1}}. {{question.text}}</div><!-- .question-title -->
 		</div><!-- .left -->
 		<div class="tagline right">
@@ -38,9 +38,6 @@
 				</ul>
 				<div class="bt-next">
 					<button type="button" ng-click="nextQuestion()">Question suivante</button>
-				</div>
-				<div class="bt-next bt-next--final">
-					<button type="button">Résultats</button>
 				</div>
 			</form>
 		</div><!-- .content -->

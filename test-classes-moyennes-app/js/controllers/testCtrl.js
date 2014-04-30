@@ -8,7 +8,7 @@ define([], function() {
 
 		console.log("init test");
 
-		var debug = true;
+		var debug = false;
 
 		$scope.answers = [];
 		$rootScope.results = {};
@@ -19,13 +19,14 @@ define([], function() {
 				return;
 			}
 
-			if (debug) {
-				$scope.nextQuestion();
-			} else {
-				jQuery('.bt-next').animate({
-					opacity: 1
-				}, 500);
-			}
+			// if (false && debug) {
+			// 	$scope.nextQuestion();
+			// } else {
+			jQuery('.bt-next').animate({
+				opacity: 1
+			}, 500);
+			jQuery('.bt-next').find('button').css('cursor','pointer');
+			// }
 
 		};
 
@@ -54,17 +55,20 @@ define([], function() {
 
 		var showQuestion = function() {
 
-			jQuery('.bt-next').animate({
+			jQuery('.bt-next').css('cursor','default').animate({
 				opacity: 0
 			}, 100);
-
+			jQuery('.bt-next').find('button').css('cursor','default');
 			if ($scope.question_idx < $scope.questions.length) {
 
 				$scope.question = $scope.questions[$scope.question_idx];
-				// console.log($scope.question);
 
 			} else {
 				$location.path("/test-classes-moyennes-app/resultats");
+			}
+
+			if ( $scope.question_idx == ($scope.questions.length - 1) ) {
+				jQuery('.bt-next').addClass('bt-next--final').find('button').html('Résultats');
 			}
 
 		};
