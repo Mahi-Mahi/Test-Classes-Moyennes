@@ -67,7 +67,7 @@ define([], function() {
 				break;
 			case 'E':
 				jQuery('.csp .result-answer span').html("Peut-<br />être").addClass('maybe');
-				jQuery('.csp .media-block .media-block').html("On estime qu’environ 20 % des cadres et professions intellectuelles supérieurs pourraient être rangés dans les classes moyennes. moyennes.");
+				jQuery('.csp .media-block .media-block').html("On estime qu’environ 20 % des cadres et professions intellectuelles supérieurs pourraient être rangés dans les classes moyennes.");
 				csp = 1;
 				break;
 		}
@@ -119,7 +119,7 @@ define([], function() {
 		if (total > 2) {
 			cm = true;
 		} else {
-			if ((earnings === 1 && estate === 1) || (csp === 1 && earnings === 1) || (studies === 1 && earnings === 1) || (csp === 1 && estate === 1)) {
+			if ((earnings === 1 && estate === 1) || (csp === 1 && earnings === 1) || (studies === 1 && earnings === 1) || (csp === 1 && estate === 1) || (csp === 1 && studies === 1)) {
 				cm = true;
 			} else {
 				cm = false;

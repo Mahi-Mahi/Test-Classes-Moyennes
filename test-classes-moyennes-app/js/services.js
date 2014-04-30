@@ -7,7 +7,7 @@ define(['angular'], function(angular) {
 	// In this case it is a simple value service.
 	angular.module('myApp.services', ['ngResource'])
 		.factory('dataService', function($resource) {
-			return $resource('/test-classes-moyennes-app/data/data.json?1398880189578', {}, {
+			return $resource('/test-classes-moyennes-app/data/data.json?1398881116108', {}, {
 				getData: {
 					method: 'GET',
 					isArray: false
