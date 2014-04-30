@@ -309,7 +309,12 @@ textarea {
       background: #fdfdfd; }
   .results .tagline {
     margin: 0 0 0 55px; }
-
+  .tagline a {
+    text-decoration: none;
+  }
+  #methodo li ,  #methodo p {
+    font-size:12px;
+  }
 .bt-go {
   padding: 60px 0 0 0; }
   .bt-go a {
