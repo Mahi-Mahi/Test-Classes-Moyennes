@@ -8,7 +8,7 @@ define([], function() {
 
 		console.log("init test");
 
-		var debug = true;
+		var debug = false;
 
 		$scope.answers = [];
 		$rootScope.results = {};
@@ -19,13 +19,13 @@ define([], function() {
 				return;
 			}
 
-			if (debug) {
-				$scope.nextQuestion();
-			} else {
-				jQuery('.bt-next').animate({
-					opacity: 1
-				}, 500);
-			}
+			// if (false && debug) {
+			// 	$scope.nextQuestion();
+			// } else {
+			jQuery('.bt-next').animate({
+				opacity: 1
+			}, 500);
+			// }
 
 		};
 
