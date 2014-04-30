@@ -19,12 +19,12 @@ define([], function() {
 				return;
 			}
 
-			$scope.nextQuestion();
+			// $scope.nextQuestion();
 
-			// jQuery('.bt-next').animate({
-			// 	opacity: 1
-			// }, 500);
-			// jQuery('.bt-next').find('button').css('cursor', 'pointer');
+			jQuery('.bt-next').animate({
+				opacity: 1
+			}, 500);
+			jQuery('.bt-next').find('button').css('cursor', 'pointer');
 		};
 
 		$scope.nextQuestion = function() {
