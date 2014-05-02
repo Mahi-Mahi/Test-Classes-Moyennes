@@ -2,7 +2,7 @@
 /* global angular */
 
 require.config({
-	urlArgs: "bust=" + Math.random(), //'1399017058780',
+	urlArgs: "bust=" + Math.random(), //'1399018451225',
 	paths: {
 		angular: '/test-classes-moyennes-app/vendor/angular/angular',
 		angularRoute: '/test-classes-moyennes-app/vendor/angular-route/angular-route',
