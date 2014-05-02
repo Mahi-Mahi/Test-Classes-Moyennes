@@ -612,6 +612,7 @@ text-decoration: none;
 		-o-transform: rotate(-15deg);
 		-webkit-transform: rotate(-15deg);
 		transform: rotate(-15deg);
+		-webkit-transform-style: preserve-3d;
 		position:absolute;
 		top:15px;
 		left:0px;
