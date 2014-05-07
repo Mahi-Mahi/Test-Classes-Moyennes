@@ -90,6 +90,7 @@ gulp.task('build', ['setup'], function() {
         .pipe(gulp.dest(base_url + '/'));
     gulp.src(['app/**/*.html', 'app/**/*.js', 'app/**/*.css', 'app/.htaccess'])
 
+        .pipe(replace("SHARE_URL_RAW", share_url))
     .pipe(replace("SHARE_URL", encodeURIComponent(share_url)))
         .pipe(replace("SHARE_TEXT", encodeURIComponent(share_text)))
         .pipe(replace("SHARE_STATUS", encodeURIComponent(share_status)))
