@@ -68,7 +68,7 @@ define([], function() {
 			case 'E':
 				jQuery('.csp .result-answer span').html("Peut-<br />être").addClass('maybe');
 				jQuery('.csp .media-block .media-block').html("On estime qu’environ 20 % des cadres et professions intellectuelles supérieurs pourraient être rangés dans les classes moyennes.");
-				csp = 1;
+				csp = -1;
 				break;
 		}
 
@@ -114,6 +114,7 @@ define([], function() {
 
 		var cm, total = studies + csp + earnings + estate;
 
+		console.log([studies, csp, earnings, estate]);
 		console.log(total);
 
 		if (total > 2) {
